@@ -1,0 +1,391 @@
+{
+    "users":[
+        {
+            "id":,
+            "firstName":,
+            "lastName":,
+            "email":,
+            "password":,
+        },
+        {}
+    ],
+    "hotDogs":[
+       {
+           "id": 1,
+           "userId":"",
+           "name": "New York #1",
+           "topping":"Deli Mustard, Sauerkraut",
+           "dateComplete":"",
+           "isFavorite": false,
+           "image": "",
+           "note": 
+       },
+       {
+           "id": 2,
+           "userId":"",
+           "name":"New York #2",
+           "topping":"Deli Mustard, Sauerkraut, Onion Sauce",
+           "dateComplete":"",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 3,
+           "userId":,
+           "name":"Jersey Italian",
+           "topping":"Deli mustard, Fried Potatoes, Grilled Onions & Peppers -add Marinara on request",
+           "dateComplete":"",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 4,
+           "userId":,
+           "name":"Jersey Breakfast",
+           "topping":"Bacon, Shredded Cheese, Fried Egg",
+           "dateComplete":"",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 5,
+           "userId":,
+           "name":"Boston 'Hottie'",
+           "topping":"Chili, Pepper Jack Cheese, Sour Cream",
+           "dateComplete":"",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 6,
+           "userId":,
+           "name":"Boston 'Nor Easter'",
+           "topping":"Maple Baked Beans, Bacon",
+           "dateComplete":"",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 7,
+           "userId":,
+           "name":"Buffalo",
+           "topping":"Wing Sauce, Bleu Cheese Crumbles",
+           "dateComplete":"",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 8,
+           "userId":,
+           "name":"Northern Mass.",
+           "topping":"Mustard, Sweet Relish",
+           "dateComplete":"",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 9,
+           "userId":,
+           "name":"New Hampshire",
+           "topping":"Mustard, Sweet Relish, Onions",
+           "dateComplete":"",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 10,
+           "userId":,
+           "name": "Rhode Island",
+           "topping": "Chili, Onion, Mustard, Celery Sale",
+           "dateComplete":"",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 11,
+           "userId":,
+           "name": "Washington D.C.",
+           "topping": "Banana Peppers, Onions, Diced Red Peppers, Pickles, Mayo",
+           "dateComplete":"",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 12,
+           "userId":,
+           "name": "Baltimore",
+           "topping": "Bacon, Cole Slaw",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 13,
+           "userId":,
+           "name": "Connecticut",
+           "topping": "Mustard, Bacon, Sauerkraut, Onion, Maine Onion Sauce, Mustard, Celery Salt",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 14,
+           "userId":,
+           "name": "Pennsylvania 'Mop Dog'",
+           "topping": "Mustard, Onion, Pickle Spear",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 15,
+           "userId":,
+           "name": "Pennsylvania 'Italian'",
+           "topping": "Marinara sauce, Provolone or Mozzarella cheese",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 16,
+           "userId":,
+           "name": "Pittsburgh",
+           "topping": "Fried Potatoes, Coleslaw, Tomatoes, Provolone Cheese",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 17,
+           "userId":,
+           "name": "East Texas",
+           "topping": "Chili, Bacon, BBQ Sauce",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 18,
+           "userId":,
+           "name": "West Texas",
+           "topping": "Bacon, BBQ Sauce, Onion Rings",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 19,
+           "userId":,
+           "name": "Arizona",
+           "topping": "Bacon, Tomato, Onion, Cheese, Mustard, Salsa, Jalapenos",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 20,
+           "userId":,
+           "name": "Los Angeles",
+           "topping": "Bacon, Grilled Onions, Cheese, Jalapenos",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 21,
+           "userId":,
+           "name": "Seattle",
+           "topping": "Sauerkraut, Onions, Cream Cheese",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 22,
+           "userId":,
+           "name": "Guadalajara",
+           "topping": "Relish, Onions, Tomatoes, Sour Cream",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 23,
+           "userId":,
+           "name": "Tijuana",
+           "topping": "Jalapenos, Sport Peppers, Onions, Hot Sauce",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 24,
+           "userId":,
+           "name": "Hawaii",
+           "topping": "Pineapple/Mango Relish",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 25,
+           "userId":,
+           "name": "The Coney",
+           "topping": "Chili, Onion, Mustard",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 26,
+           "userId":,
+           "name": "Cincinnati",
+           "topping": "Chili, Cheese, Onion, Mustard",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 27,
+           "userId":,
+           "name": "Chicago",
+           "topping": "Tomatoes, Onions, Dill pickle spear, Relish, Sport peppers, Mustard, Celery Salt",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 28,
+           "userId":,
+           "name": "Kansas City",
+           "topping": "Sauerkraut, Swiss Cheese",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 29,
+           "userId":,
+           "name": "Michigan",
+           "topping": "Sauteed Mushrooms, Cheedar or Swiss Cheese",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 30,
+           "userId":,
+           "name": "Montreal",
+           "topping": "Deli Mustard, Relish, Cole Slaw, Onions",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 31,
+           "userId":,
+           "name": "Tennessee",
+           "topping": "Chili, Cole slaw, Onions, Mustard, Relish",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 32,
+           "userId":,
+           "name": "West Virginia",
+           "topping": "Cole slaw, Onions, Mustard",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 33,
+           "userId":,
+           "name": "Carolina",
+           "topping": "Chili, Cole slaw, Onions, Mustard",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 34,
+           "userId":,
+           "name": "Georgia",
+           "topping": "Pimiento Cheese, Cole slaw",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 35,
+           "userId":,
+           "name": "Memphis",
+           "topping": "Bacon, Grilled Onions, ",
+           "dateComplete":,
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 36,
+           "userId":,
+           "name": "Florida",
+           "topping": "Sauerkraut, Cole slaw",
+           "dateComplete": "",
+           "isFavorite": false,
+           "image": "",
+           "note":
+       },
+       {
+           "id": 37,
+           "userId":,
+           "name": "Alabama",
+           "topping": "Chili, Sauerkraut, Pickles, Mustard",
+           "dateComplete":,
+           "isFavorite": false,
+           "image": "",
+           "note":
+       } 
+    ],
+    "wallOfWeiners":[
+        {
+            "id":,
+            "userId":,
+            "rankning":,
+        }
+    ]
+}
