@@ -6,6 +6,20 @@
             "lastName": "Conerton",
             "email": "email@email.com",
             "password": "hotdog"
+        },
+        {
+            "id": 2,
+            "firstName": "Megan",
+            "lastName": "",
+            "email": "email@email.com",
+            "password": "hotdog"
+        },
+        {
+            "id": 3,
+            "firstName": "Wesley",
+            "lastName": "",
+            "email": "email@email.com",
+            "password": "hotdog"
         }
     ],
     "hotDogs":[
@@ -243,11 +257,11 @@
     "userHotDogs": [
         {
             "id": 1,
-            "userId": "",
-            "hotDogId": "",
-            "dateCompleted": "",
-            "isFavorite": false,
-            "note": ""
+            "userId": 1,
+            "hotDogId": 34,
+            "dateCompleted": "12/5/2020",
+            "isFavorite": true,
+            "note": "This is the best hot dog!"
         }
     ],
 
