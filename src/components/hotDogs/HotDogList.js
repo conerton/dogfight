@@ -7,10 +7,9 @@ export const HotDogList = () => {
   const { hotDogs, getHotDogs } = useContext(HotDogContext);
 
   useEffect(() => {
+    console.log("List");
     getHotDogs();
   }, []);
-
-  useEffect(() => {}, [hotDogs]);
 
   return (
     <div className="hotDogs">
