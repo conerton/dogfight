@@ -1,12 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import { Woofers } from "./components/Woofers";
 import reportWebVitals from "./reportWebVitals";
+import { Dogfight } from "./components/Dogfight";
+import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Woofers />
+    <Router>
+      <Dogfight />
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
 );
