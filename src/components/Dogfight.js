@@ -1,6 +1,9 @@
 import React from "react";
 import "./Dogfight.css";
 import Route from "react-router-dom";
+import Login from "./auth";
+import Register from "./auth";
+import ApplicationViews from "./ApplicationViews";
 
 export const Dogfight = () => (
   <>
