@@ -22,7 +22,7 @@
             "password": "hotdog"
         }
     ],
-    "hotDogs":[
+    "hotdogs":[
        {
            "id": 1,
            "name": "New York #1",
