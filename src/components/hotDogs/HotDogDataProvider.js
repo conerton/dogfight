@@ -12,11 +12,18 @@ export const HotDogProvider = (props) => {
       .then((hd) => console.log(hd));
   };
 
+  const getHotDogById = (id) => {
+    return fetch(`http://localhost:8088/hotdogs/${id}`).then((res) =>
+      res.json()
+    );
+  };
+
   return (
     <HotDogContext.Provider
       value={{
         hotDogs,
         getHotDogs,
+        getHotDogById,
       }}
     >
       {props.children}

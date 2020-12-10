@@ -2,22 +2,32 @@ import React, { useContext, useEffect, useState, useRef } from "react";
 import { HotDogContext } from "./HotDogDataProvider";
 
 export const HotDogForm = (props) => {
-  const { getHotDogs } = useContext(HotDogContext);
-  const { hotDogId, getHotDog } = useState(HotDogContext);
-
-  const hotdog = useRef(null);
+  const { getHotDogById } = useContext(HotDogContext);
+  const [hotdog, setHotDog] = useState({});
 
   useEffect(() => {
-    getHotDogs(props.match.params.hotDogId);
+    getHotDogById(props.match.params.hotdogId).then((parasedHotDog) =>
+      setHotDog(parasedHotDog)
+    );
   }, []);
 
   return (
     <>
-      <section className="hotDogs">
-        <h3 className="hotdog_name">{hotDogId.name}</h3>
-        <div className="hotdog_toppings">{hotDogId.toppings}</div>
-        <button>Ate it!</button>
-      </section>
+      {console.log(hotdog)}
+      <form className="hotDogs">
+        <fieldset>
+          <h3 className="hotdog_name"> Name: {hotdog.name}</h3>
+          <div className="hotdog_toppings"> Toppings: {hotdog.topping}</div>
+          <label htmlFor="hotdog_note"></label>
+          <input
+            type="text"
+            name="name"
+            className="form-control"
+            placeholder="Note"
+          />
+          <button>Ate it!</button>
+        </fieldset>
+      </form>
     </>
   );
 };

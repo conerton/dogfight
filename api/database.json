@@ -1,274 +1,277 @@
 {
-    "users":[
-        {
-            "id": 1,
-            "firstName": "Shawn",
-            "lastName": "Conerton",
-            "email": "email@email.com",
-            "password": "hotdog"
-        },
-        {
-            "id": 2,
-            "firstName": "Megan",
-            "lastName": "",
-            "email": "email@email.com",
-            "password": "hotdog"
-        },
-        {
-            "id": 3,
-            "firstName": "Wesley",
-            "lastName": "",
-            "email": "email@email.com",
-            "password": "hotdog"
-        }
-    ],
-    "hotdogs":[
-       {
-           "id": 1,
-           "name": "New York #1",
-           "topping":"Deli Mustard, Sauerkraut",
-           "image": ""
-        
-       },
-       {
-           "id": 2,
-           "name":"New York #2",
-           "topping":"Deli Mustard, Sauerkraut, Onion Sauce",
-           "image": ""
-       },
-       {
-           "id": 3,
-           "name":"Jersey Italian",
-           "topping":"Deli mustard, Fried Potatoes, Grilled Onions & Peppers -add Marinara on request",
-           "image": ""
-       },
-       {
-           "id": 4,
-           "name":"Jersey Breakfast",
-           "topping":"Bacon, Shredded Cheese, Fried Egg",
-           "image": ""
-       },
-       {
-           "id": 5,
-           "name":"Boston 'Hottie'",
-           "topping":"Chili, Pepper Jack Cheese, Sour Cream",
-           "image": ""
-       },
-       {
-           "id": 6,
-           "name":"Boston 'Nor Easter'",
-           "topping":"Maple Baked Beans, Bacon",
-           "image": ""
-       },
-       {
-           "id": 7,
-           "name":"Buffalo",
-           "topping":"Wing Sauce, Bleu Cheese Crumbles",
-           "image": ""
-       },
-       {
-           "id": 8,
-           "name":"Northern Mass.",
-           "topping":"Mustard, Sweet Relish",
-           "image": ""
-       },
-       {
-           "id": 9,
-           "name":"New Hampshire",
-           "topping":"Mustard, Sweet Relish, Onions",
-           "image": ""
-       },
-       {
-           "id": 10,
-           "name": "Rhode Island",
-           "topping": "Chili, Onion, Mustard, Celery Sale",
-           "image": ""
-       },
-       {
-           "id": 11,
-           "name": "Washington D.C.",
-           "topping": "Banana Peppers, Onions, Diced Red Peppers, Pickles, Mayo",
-           "image": ""
-       },
-       {
-           "id": 12,
-           "name": "Baltimore",
-           "topping": "Bacon, Cole Slaw",
-           "image": ""
-       },
-       {
-           "id": 13,
-           "name": "Connecticut",
-           "topping": "Mustard, Bacon, Sauerkraut, Onion, Maine Onion Sauce, Mustard, Celery Salt",
-           "image": ""
-       },
-       {
-           "id": 14,
-           "name": "Pennsylvania 'Mop Dog'",
-           "topping": "Mustard, Onion, Pickle Spear",
-           "image": ""
-       },
-       {
-           "id": 15,
-           "name": "Pennsylvania 'Italian'",
-           "topping": "Marinara sauce, Provolone or Mozzarella cheese",
-           "image": ""
-       },
-       {
-           "id": 16,
-           "name": "Pittsburgh",
-           "topping": "Fried Potatoes, Coleslaw, Tomatoes, Provolone Cheese",
-           "image": ""
-       },
-       {
-           "id": 17,
-           "name": "East Texas",
-           "topping": "Chili, Bacon, BBQ Sauce",
-           "image": ""
-       },
-       {
-           "id": 18,
-           "name": "West Texas",
-           "topping": "Bacon, BBQ Sauce, Onion Rings",
-           "image": ""
-       },
-       {
-           "id": 19,
-           "name": "Arizona",
-           "topping": "Bacon, Tomato, Onion, Cheese, Mustard, Salsa, Jalapenos",
-           "image": ""
-       },
-       {
-           "id": 20,
-           "name": "Los Angeles",
-           "topping": "Bacon, Grilled Onions, Cheese, Jalapenos",
-           "image": ""
-       },
-       {
-           "id": 21,
-           "name": "Seattle",
-           "topping": "Sauerkraut, Onions, Cream Cheese",
-           "image": ""
-       },
-       {
-           "id": 22,
-           "name": "Guadalajara",
-           "topping": "Relish, Onions, Tomatoes, Sour Cream",
-           "image": ""
-       },
-       {
-           "id": 23,
-           "name": "Tijuana",
-           "topping": "Jalapenos, Sport Peppers, Onions, Hot Sauce",
-           "image": ""
-       },
-       {
-           "id": 24,
-           "name": "Hawaii",
-           "topping": "Pineapple/Mango Relish",
-           "image": ""
-           
-       },
-       {
-           "id": 25,
-           "name": "The Coney",
-           "topping": "Chili, Onion, Mustard",
-           "image": ""
-       },
-       {
-           "id": 26,
-           "name": "Cincinnati",
-           "topping": "Chili, Cheese, Onion, Mustard",
-           "image": ""
-       },
-       {
-           "id": 27,
-           "name": "Chicago",
-           "topping": "Tomatoes, Onions, Dill pickle spear, Relish, Sport peppers, Mustard, Celery Salt",
-           "image": ""
-       },
-       {
-           "id": 28,
-           "name": "Kansas City",
-           "topping": "Sauerkraut, Swiss Cheese",
-           "image": ""
-       },
-       {
-           "id": 29,
-           "name": "Michigan",
-           "topping": "Sauteed Mushrooms, Cheedar or Swiss Cheese",
-           "image": ""
-       },
-       {
-           "id": 30,
-           "name": "Montreal",
-           "topping": "Deli Mustard, Relish, Cole Slaw, Onions",
-           "image": ""
-       },
-       {
-           "id": 31,
-           "name": "Tennessee",
-           "topping": "Chili, Cole slaw, Onions, Mustard, Relish",
-           "image": ""
-       },
-       {
-           "id": 32,
-           "name": "West Virginia",
-           "topping": "Cole slaw, Onions, Mustard",
-           "image": ""
-       },
-       {
-           "id": 33,
-           "name": "Carolina",
-           "topping": "Chili, Cole slaw, Onions, Mustard",
-           "image": ""
-       },
-       {
-           "id": 34,
-           "name": "Georgia",
-           "topping": "Pimiento Cheese, Cole slaw",
-           "image": ""
-       },
-       {
-           "id": 35,
-           "name": "Memphis",
-           "topping": "Bacon, Grilled Onions, ",
-           "image": ""
-       },
-       {
-           "id": 36,
-           "name": "Florida",
-           "topping": "Sauerkraut, Cole slaw",
-           "image": ""
-       },
-       {
-           "id": 37,
-           "name": "Alabama",
-           "topping": "Chili, Sauerkraut, Pickles, Mustard",
-           "image": ""
-       },
-       {
-           "id": 38,
-           "name": "Seattle",
-           "toppings": "Sauerkraut, Onions, Cream Cheese",
-           "image": ""
-       } 
-    ],
-    "userHotDogs": [
-        {
-            "id": 1,
-            "userId": 1,
-            "hotDogId": 34,
-            "dateCompleted": "12/5/2020",
-            "isFavorite": true,
-            "note": "This is the best hot dog!"
-        }
-    ],
-
-    "wallOfWeiners":[
-        {
-            "id": 1,
-            "userId":""
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Shawn",
+      "lastName": "Conerton",
+      "email": "email@email.com",
+      "password": "hotdog"
+    },
+    {
+      "id": 2,
+      "firstName": "Megan",
+      "lastName": "",
+      "email": "email@email.com",
+      "password": "hotdog"
+    },
+    {
+      "id": 3,
+      "firstName": "Wesley",
+      "lastName": "",
+      "email": "email@email.com",
+      "password": "hotdog"
+    },
+    {
+      "email": "happy@happy.com",
+      "password": "hotdog",
+      "name": "Jack Jackson",
+      "id": 4
+    }
+  ],
+  "hotdogs": [
+    {
+      "id": 1,
+      "name": "New York #1",
+      "topping": "Deli Mustard, Sauerkraut",
+      "image": ""
+    },
+    {
+      "id": 2,
+      "name": "New York #2",
+      "topping": "Deli Mustard, Sauerkraut, Onion Sauce",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "name": "Jersey Italian",
+      "topping": "Deli mustard, Fried Potatoes, Grilled Onions & Peppers -add Marinara on request",
+      "image": ""
+    },
+    {
+      "id": 4,
+      "name": "Jersey Breakfast",
+      "topping": "Bacon, Shredded Cheese, Fried Egg",
+      "image": ""
+    },
+    {
+      "id": 5,
+      "name": "Boston 'Hottie'",
+      "topping": "Chili, Pepper Jack Cheese, Sour Cream",
+      "image": ""
+    },
+    {
+      "id": 6,
+      "name": "Boston 'Nor Easter'",
+      "topping": "Maple Baked Beans, Bacon",
+      "image": ""
+    },
+    {
+      "id": 7,
+      "name": "Buffalo",
+      "topping": "Wing Sauce, Bleu Cheese Crumbles",
+      "image": ""
+    },
+    {
+      "id": 8,
+      "name": "Northern Mass.",
+      "topping": "Mustard, Sweet Relish",
+      "image": ""
+    },
+    {
+      "id": 9,
+      "name": "New Hampshire",
+      "topping": "Mustard, Sweet Relish, Onions",
+      "image": ""
+    },
+    {
+      "id": 10,
+      "name": "Rhode Island",
+      "topping": "Chili, Onion, Mustard, Celery Sale",
+      "image": ""
+    },
+    {
+      "id": 11,
+      "name": "Washington D.C.",
+      "topping": "Banana Peppers, Onions, Diced Red Peppers, Pickles, Mayo",
+      "image": ""
+    },
+    {
+      "id": 12,
+      "name": "Baltimore",
+      "topping": "Bacon, Cole Slaw",
+      "image": ""
+    },
+    {
+      "id": 13,
+      "name": "Connecticut",
+      "topping": "Mustard, Bacon, Sauerkraut, Onion, Maine Onion Sauce, Mustard, Celery Salt",
+      "image": ""
+    },
+    {
+      "id": 14,
+      "name": "Pennsylvania 'Mop Dog'",
+      "topping": "Mustard, Onion, Pickle Spear",
+      "image": ""
+    },
+    {
+      "id": 15,
+      "name": "Pennsylvania 'Italian'",
+      "topping": "Marinara sauce, Provolone or Mozzarella cheese",
+      "image": ""
+    },
+    {
+      "id": 16,
+      "name": "Pittsburgh",
+      "topping": "Fried Potatoes, Coleslaw, Tomatoes, Provolone Cheese",
+      "image": ""
+    },
+    {
+      "id": 17,
+      "name": "East Texas",
+      "topping": "Chili, Bacon, BBQ Sauce",
+      "image": ""
+    },
+    {
+      "id": 18,
+      "name": "West Texas",
+      "topping": "Bacon, BBQ Sauce, Onion Rings",
+      "image": ""
+    },
+    {
+      "id": 19,
+      "name": "Arizona",
+      "topping": "Bacon, Tomato, Onion, Cheese, Mustard, Salsa, Jalapenos",
+      "image": ""
+    },
+    {
+      "id": 20,
+      "name": "Los Angeles",
+      "topping": "Bacon, Grilled Onions, Cheese, Jalapenos",
+      "image": ""
+    },
+    {
+      "id": 21,
+      "name": "Seattle",
+      "topping": "Sauerkraut, Onions, Cream Cheese",
+      "image": ""
+    },
+    {
+      "id": 22,
+      "name": "Guadalajara",
+      "topping": "Relish, Onions, Tomatoes, Sour Cream",
+      "image": ""
+    },
+    {
+      "id": 23,
+      "name": "Tijuana",
+      "topping": "Jalapenos, Sport Peppers, Onions, Hot Sauce",
+      "image": ""
+    },
+    {
+      "id": 24,
+      "name": "Hawaii",
+      "topping": "Pineapple/Mango Relish",
+      "image": ""
+    },
+    {
+      "id": 25,
+      "name": "The Coney",
+      "topping": "Chili, Onion, Mustard",
+      "image": ""
+    },
+    {
+      "id": 26,
+      "name": "Cincinnati",
+      "topping": "Chili, Cheese, Onion, Mustard",
+      "image": ""
+    },
+    {
+      "id": 27,
+      "name": "Chicago",
+      "topping": "Tomatoes, Onions, Dill pickle spear, Relish, Sport peppers, Mustard, Celery Salt",
+      "image": ""
+    },
+    {
+      "id": 28,
+      "name": "Kansas City",
+      "topping": "Sauerkraut, Swiss Cheese",
+      "image": ""
+    },
+    {
+      "id": 29,
+      "name": "Michigan",
+      "topping": "Sauteed Mushrooms, Cheedar or Swiss Cheese",
+      "image": ""
+    },
+    {
+      "id": 30,
+      "name": "Montreal",
+      "topping": "Deli Mustard, Relish, Cole Slaw, Onions",
+      "image": ""
+    },
+    {
+      "id": 31,
+      "name": "Tennessee",
+      "topping": "Chili, Cole slaw, Onions, Mustard, Relish",
+      "image": ""
+    },
+    {
+      "id": 32,
+      "name": "West Virginia",
+      "topping": "Cole slaw, Onions, Mustard",
+      "image": ""
+    },
+    {
+      "id": 33,
+      "name": "Carolina",
+      "topping": "Chili, Cole slaw, Onions, Mustard",
+      "image": ""
+    },
+    {
+      "id": 34,
+      "name": "Georgia",
+      "topping": "Pimiento Cheese, Cole slaw",
+      "image": ""
+    },
+    {
+      "id": 35,
+      "name": "Memphis",
+      "topping": "Bacon, Grilled Onions, ",
+      "image": ""
+    },
+    {
+      "id": 36,
+      "name": "Florida",
+      "topping": "Sauerkraut, Cole slaw",
+      "image": ""
+    },
+    {
+      "id": 37,
+      "name": "Alabama",
+      "topping": "Chili, Sauerkraut, Pickles, Mustard",
+      "image": ""
+    },
+    {
+      "id": 38,
+      "name": "Seattle",
+      "toppings": "Sauerkraut, Onions, Cream Cheese",
+      "image": ""
+    }
+  ],
+  "userHotDogs": [
+    {
+      "id": 1,
+      "userId": 1,
+      "hotDogId": 34,
+      "dateCompleted": "12/5/2020",
+      "isFavorite": true,
+      "note": "This is the best hot dog!"
+    }
+  ],
+  "wallOfWeiners": [
+    {
+      "id": 1,
+      "userId": ""
+    }
+  ]
 }
