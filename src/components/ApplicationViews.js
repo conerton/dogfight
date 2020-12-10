@@ -1,7 +1,7 @@
 import React from "react";
 import { Route } from "react-router-dom";
 import { HotDogProvider } from "./hotDogs/HotDogDataProvider";
-import { HotDogDetail } from "./hotDogs/HotDogDetail";
+import { HotDogForm } from "./hotDogs/HotDogForm";
 import { HotDogList } from "./hotDogs/HotDogList";
 
 export const ApplicationViews = (props) => {
@@ -14,7 +14,7 @@ export const ApplicationViews = (props) => {
         <Route
           path="/hotdogs/:hotdogId(\d+)"
           render={(props) => {
-            return <HotDogDetail {...props} />;
+            return <HotDogForm {...props} />;
           }}
         ></Route>
       </HotDogProvider>
