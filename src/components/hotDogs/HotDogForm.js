@@ -3,7 +3,7 @@ import { HotDogContext } from "./HotDogDataProvider";
 
 export const HotDogForm = (props) => {
   const { getHotDogs } = useContext(HotDogContext);
-  const { hotDogId, getHotDogs } = useState(HotDogContext);
+  const { hotDogId, getHotDog } = useState(HotDogContext);
 
   const hotdog = useRef(null);
 
