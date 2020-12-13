@@ -260,12 +260,12 @@
   ],
   "userHotDogs": [
     {
-      "id": 1,
+      "hotDogId": 19,
       "userId": 1,
-      "hotDogId": 34,
-      "dateCompleted": "12/5/2020",
-      "isFavorite": true,
-      "note": "This is the best hot dog!"
+      "hotDogNote": "Favorite",
+      "timeStamp": 1607894018566,
+      "favHotDog": false,
+      "id": 1
     }
   ],
   "wallOfWeiners": [

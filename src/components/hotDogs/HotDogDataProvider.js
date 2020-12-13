@@ -18,14 +18,26 @@ export const HotDogProvider = (props) => {
     );
   };
 
-  const addHotDog = (note) => {
+  const addHotDog = (note, userId, hotDogId, dateCompleted, isFavorite) => {
     return fetch(`http://localhost:8088/userHotDogs`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(note),
+      body: JSON.stringify(
+        note,
+        parseInt(userId),
+        parseInt(hotDogId),
+        dateCompleted,
+        isFavorite
+      ),
     }).then(getHotDogs);
+  };
+
+  const getUserHotDogs = () => {
+    return fetch("http://localhost:8088/userHotDogs")
+      .then((res) => res.json())
+      .then(setHotDogs);
   };
 
   return (
@@ -35,6 +47,7 @@ export const HotDogProvider = (props) => {
         getHotDogs,
         getHotDogById,
         addHotDog,
+        getUserHotDogs,
       }}
     >
       {props.children}

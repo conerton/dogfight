@@ -10,7 +10,7 @@ export const ApplicationViews = (props) => {
   return (
     <>
       <h1>Cori's Dogfight</h1>
-
+      {/* <UserHotDogProvider> */}
       <HotDogProvider>
         <Route exact path="/">
           <HotDogList />
@@ -23,6 +23,7 @@ export const ApplicationViews = (props) => {
           }}
         ></Route>
       </HotDogProvider>
+      {/* </UserHotDogProvider> */}
     </>
   );
 };
