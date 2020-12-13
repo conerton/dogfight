@@ -1,24 +1,24 @@
-// import React, { useState } from "react";
+import React, { useState } from "react";
 
-// export const UserHotDogContext = React.createContext();
+export const UserHotDogContext = React.createContext();
 
-// export const UserHotDogProvider = (props) => {
-//   const [userHotDog, setUserHotDog] = useState([]);
+export const UserHotDogProvider = (props) => {
+  const [userHotDog, setUserHotDog] = useState([]);
 
-//   const getUserHotDogs = () => {
-//     return fetch("http://localhost:8088/userHotDogs")
-//       .then((res) => res.json())
-//       .then(setUserHotDog);
-//   };
+  const getUserHotDogs = () => {
+    return fetch("http://localhost:8088/userHotDogs")
+      .then((res) => res.json())
+      .then(setUserHotDog);
+  };
 
-//   return (
-//     <UserHotDogContext.Provider>
-//       value=
-//       {{
-//         userHotDog,
-//         getUserHotDogs,
-//       }}
-//       {props.children}
-//     </UserHotDogContext.Provider>
-//   );
-// };
+  return (
+    <UserHotDogContext.Provider>
+      value=
+      {{
+        userHotDog,
+        getUserHotDogs,
+      }}
+      {props.children}
+    </UserHotDogContext.Provider>
+  );
+};

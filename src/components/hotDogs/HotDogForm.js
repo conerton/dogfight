@@ -6,10 +6,7 @@ export const HotDogForm = (props) => {
   const { getHotDogById, addHotDog } = useContext(HotDogContext);
   const [hotdog, setHotDog] = useState({});
 
-  //   const hdName = useRef(null);
   const note = useRef(null);
-  const useId = useRef(null);
-  const hdId = useRef(null);
 
   useEffect(() => {
     getHotDogById(props.match.params.hotdogId).then((parasedHotDog) =>
@@ -18,10 +15,11 @@ export const HotDogForm = (props) => {
   }, []);
 
   const addToList = () => {
-    const hotDogId = parseInt(hdId.current.value);
-    const userId = parseInt(useId.current.value);
+    const hotDogId = parseInt(props.match.params.hotdogId);
+    const userId = parseInt(localStorage.getItem("dogfight_user_id"));
     const hotDogNote = note.current.value;
-    // const hotDogName = parseInt(hdName.current.value);
+    const timeStamp = Date.now();
+    const favHotDog = false;
     console.log("note", hotDogNote);
 
     if (hotDogNote === "") {
@@ -31,10 +29,12 @@ export const HotDogForm = (props) => {
         hotDogId,
         userId,
         hotDogNote,
+        timeStamp,
+        favHotDog,
       }).then(() => props.history.push("/"));
     }
   };
-
+  console.log(props);
   return (
     <>
       {console.log(hotdog)}
@@ -49,8 +49,6 @@ export const HotDogForm = (props) => {
             className="form-control"
             placeholder="Note"
             ref={note}
-            ref={hdId}
-            ref={useId}
           />
           <button
             type="submit"
