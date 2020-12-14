@@ -9,8 +9,8 @@ export const HotDogForm = (props) => {
   const note = useRef(null);
 
   useEffect(() => {
-    getHotDogById(props.match.params.hotdogId).then((parasedHotDog) =>
-      setHotDog(parasedHotDog)
+    getHotDogById(props.match.params.hotdogId).then((parsedHotDog) =>
+      setHotDog(parsedHotDog)
     );
   }, []);
 
