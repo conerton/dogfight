@@ -12,8 +12,8 @@ export const UserHotDogList = () => {
 
   return (
     <div className="userHotDogs">
-      {userHotDogs.map((hd) => (
-        <UserHotDog key={hd.id} hotDog={hd} />
+      {userHotDogs.map((uhd) => (
+        <UserHotDog key={uhd.id} userHotDog={uhd} />
       ))}
     </div>
   );
