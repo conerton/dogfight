@@ -17,12 +17,19 @@ export const UserHotDogProvider = (props) => {
     );
   };
 
+  const deleteUserHotDog = (userHotDogId) => {
+    return fetch(`http://localhost:8088/userHotDogs/${userHotDogId}`, {
+      method: "DELETE",
+    }).then(getUserHotDogs);
+  };
+
   return (
     <UserHotDogContext.Provider
       value={{
         userHotDogs,
         getUserHotDogs,
         getUserHotDogsById,
+        deleteUserHotDog,
       }}
     >
       {props.children}

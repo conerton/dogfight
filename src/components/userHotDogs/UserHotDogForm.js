@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState, useRef } from "react";
 import { UserHotDogContext } from "./UserHotDogDataProvider";
+import { HotDogContext } from "../hotDogs/HotDogDataProvider";
 import "./UserHotDog.css";
 
 export const UserHotDogForm = (props) => {
