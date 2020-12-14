@@ -1,3 +1,7 @@
 .userHotDogs {
   border-style: dashed;
 }
+.userHotDog {
+  border-style: solid;
+  border-color: red;
+}
