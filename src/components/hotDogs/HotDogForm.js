@@ -4,18 +4,18 @@ import "./HotDog.css";
 
 export const HotDogForm = (props) => {
   const { getHotDogById, addHotDog } = useContext(HotDogContext);
-  const [hotdog, setHotDog] = useState({});
+  const [hotDog, setHotDog] = useState({});
 
   const note = useRef(null);
 
   useEffect(() => {
-    getHotDogById(props.match.params.hotdogId).then((parsedHotDog) =>
+    getHotDogById(props.match.params.hotDogId).then((parsedHotDog) =>
       setHotDog(parsedHotDog)
     );
   }, []);
 
   const addToList = () => {
-    const hotDogId = parseInt(props.match.params.hotdogId);
+    const hotDogId = parseInt(props.match.params.hotDogId);
     const userId = parseInt(localStorage.getItem("dogfight_user_id"));
     const hotDogNote = note.current.value;
     const timeStamp = Date.now();
@@ -37,12 +37,12 @@ export const HotDogForm = (props) => {
   console.log(props);
   return (
     <>
-      {console.log(hotdog)}
+      {console.log(hotDog)}
       <form className="hotDogs">
         <fieldset>
-          <h3 className="hotdog_name"> Name: {hotdog.name}</h3>
-          <div className="hotdog_toppings"> Toppings: {hotdog.topping}</div>
-          <label htmlFor="hotdog_note">Add a note!</label>
+          <h3 className="hotDog_name"> Name: {hotDog.name}</h3>
+          <div className="hotDog_toppings"> Toppings: {hotDog.topping}</div>
+          <label htmlFor="hotDog_note">Add a note!</label>
           <input
             type="text"
             name="name"
