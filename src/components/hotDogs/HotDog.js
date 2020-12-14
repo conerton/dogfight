@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const HotDog = ({ hotDog }) => (
   <section className="hotDog">
     <div className="hotDog_name">
-      <Link to={`/hotdogs/${hotDog.id}`}>{hotDog.name}</Link>
+      <Link to={`/hotDogs/${hotDog.id}`}>{hotDog.name}</Link>
     </div>
   </section>
 );

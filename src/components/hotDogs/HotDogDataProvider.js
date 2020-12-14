@@ -6,20 +6,20 @@ export const HotDogProvider = (props) => {
   const [hotDogs, setHotDogs] = useState([]);
 
   const getHotDogs = () => {
-    return fetch("http://localhost:8088/hotdogs")
+    return fetch("http://localhost:8088/hotDogs")
       .then((res) => res.json())
       .then(setHotDogs)
       .then((hd) => console.log(hd));
   };
 
   const getHotDogById = (id) => {
-    return fetch(`http://localhost:8088/hotdogs/${id}`).then((res) =>
+    return fetch(`http://localhost:8088/hotDogs/${id}`).then((res) =>
       res.json()
     );
   };
 
   const getHotDogIdName = (hotDogId) => {
-    return fetch(`http://localhost:8088/hotdogs/?hotDogId=${hotDogId}`);
+    return fetch(`http://localhost:8088/hotDogs/?hotDogId=${hotDogId}`);
   };
 
   const addHotDog = (note, userId, hotDogId, dateCompleted, isFavorite) => {

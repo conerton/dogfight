@@ -24,7 +24,7 @@ export const ApplicationViews = (props) => {
             )}
           />
           <Route
-            path="/hotdogs/:hotdogId(\d+)"
+            path="/hotDogs/:hotDogId(\d+)"
             render={(props) => {
               return <HotDogForm {...props} />;
             }}

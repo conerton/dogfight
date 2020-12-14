@@ -28,7 +28,7 @@
       "id": 4
     }
   ],
-  "hotdogs": [
+  "hotDogs": [
     {
       "id": 1,
       "name": "New York #1",
@@ -260,7 +260,7 @@
   ],
   "userHotDogs": [
     {
-      "hotdogId": 16,
+      "hotDogId": 16,
       "userId": 1,
       "hotDogNote": "Fries on a hotdog?? get outta town",
       "timeStamp": 1607976016291,
@@ -282,6 +282,14 @@
       "timeStamp": 1607982289874,
       "favHotDog": false,
       "id": 4
+    },
+    {
+      "hotDogId": 30,
+      "userId": 1,
+      "hotDogNote": "Great!",
+      "timeStamp": 1607984920107,
+      "favHotDog": false,
+      "id": 5
     }
   ],
   "wallOfWeiners": []
