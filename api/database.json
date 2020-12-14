@@ -260,12 +260,28 @@
   ],
   "userHotDogs": [
     {
-      "hotDogId": 16,
+      "hotdogId": 16,
       "userId": 1,
       "hotDogNote": "Fries on a hotdog?? get outta town",
       "timeStamp": 1607976016291,
       "favHotDog": false,
       "id": 2
+    },
+    {
+      "hotDogId": 17,
+      "userId": 1,
+      "hotDogNote": "East Texas",
+      "timeStamp": 1607980294507,
+      "favHotDog": false,
+      "id": 3
+    },
+    {
+      "hotDogId": 1,
+      "userId": 1,
+      "hotDogNote": "New yark",
+      "timeStamp": 1607982289874,
+      "favHotDog": false,
+      "id": 4
     }
   ],
   "wallOfWeiners": []

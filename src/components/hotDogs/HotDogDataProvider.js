@@ -18,6 +18,10 @@ export const HotDogProvider = (props) => {
     );
   };
 
+  const getHotDogIdName = (hotDogId) => {
+    return fetch(`http://localhost:8088/hotdogs/?hotDogId=${hotDogId}`);
+  };
+
   const addHotDog = (note, userId, hotDogId, dateCompleted, isFavorite) => {
     return fetch(`http://localhost:8088/userHotDogs`, {
       method: "POST",
@@ -48,6 +52,7 @@ export const HotDogProvider = (props) => {
         getHotDogById,
         addHotDog,
         getUserHotDogs,
+        getHotDogIdName,
       }}
     >
       {props.children}

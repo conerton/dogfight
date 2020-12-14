@@ -12,9 +12,9 @@ export const UserHotDogProvider = (props) => {
   };
 
   const getUserHotDogsById = (id) => {
-    return fetch(`http://localhost:8088/userHotDogs/${id}`).then((res) =>
-      res.json()
-    );
+    return fetch(
+      `http://localhost:8088/userHotDogs/${id}?_expand=hotDog`
+    ).then((res) => res.json());
   };
 
   const deleteUserHotDog = (userHotDogId) => {
