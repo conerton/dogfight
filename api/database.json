@@ -266,6 +266,30 @@
       "timeStamp": 1607894018566,
       "favHotDog": false,
       "id": 1
+    },
+    {
+      "hotDogId": 1,
+      "userId": 1,
+      "hotDogNote": "Hi schuyler",
+      "timeStamp": 1607896565347,
+      "favHotDog": false,
+      "id": 2
+    },
+    {
+      "hotDogId": 1,
+      "userId": 1,
+      "hotDogNote": "hotdog",
+      "timeStamp": 1607907036709,
+      "favHotDog": false,
+      "id": 3
+    },
+    {
+      "hotDogId": 16,
+      "userId": 1,
+      "hotDogNote": "Yum",
+      "timeStamp": 1607916237470,
+      "favHotDog": false,
+      "id": 4
     }
   ],
   "wallOfWeiners": [

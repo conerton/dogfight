@@ -3,7 +3,7 @@ import React, { useState } from "react";
 export const UserHotDogContext = React.createContext();
 
 export const UserHotDogProvider = (props) => {
-  const [userHotDog, setUserHotDog] = useState([]);
+  const [userHotDogs, setUserHotDog] = useState([]);
 
   const getUserHotDogs = () => {
     return fetch("http://localhost:8088/userHotDogs")
@@ -11,13 +11,20 @@ export const UserHotDogProvider = (props) => {
       .then(setUserHotDog);
   };
 
+  const getUserHotDogsById = (id) => {
+    return fetch(`http://localhost:8088/userHotDogs/${id}`).then((res) =>
+      res.json()
+    );
+  };
+
   return (
-    <UserHotDogContext.Provider>
-      value=
-      {{
-        userHotDog,
+    <UserHotDogContext.Provider
+      value={{
+        userHotDogs,
         getUserHotDogs,
+        getUserHotDogsById,
       }}
+    >
       {props.children}
     </UserHotDogContext.Provider>
   );
