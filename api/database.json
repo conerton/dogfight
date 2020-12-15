@@ -290,6 +290,14 @@
       "timeStamp": 1607984920107,
       "favHotDog": false,
       "id": 5
+    },
+    {
+      "hotDogId": 18,
+      "userId": 1,
+      "hotDogNote": "Great Hot Dog!",
+      "timeStamp": 1608003899348,
+      "favHotDog": false,
+      "id": 6
     }
   ],
   "wallOfWeiners": []

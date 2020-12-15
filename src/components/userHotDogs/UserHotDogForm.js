@@ -6,21 +6,10 @@ import "./UserHotDog.css";
 export const UserHotDogForm = (props) => {
   const { getUserHotDogsById, userHotDog } = useContext(UserHotDogContext);
 
-  //   const { getHotDogById } = useContext(HotDogContext);
-  //   const [hotDog, setHotDog] = useState({});
-
   useEffect(() => {
     getUserHotDogsById(+props.match.params.userHotDogId);
   }, []);
 
-  //   useEffect(() => {
-  //     console.log("PROPS", props);
-  //     // debugger;
-  //     getHotDogById(props.match.params.hotDogId).then((parsedHotDog) => {
-  //       setHotDog(parsedHotDog);
-  //       console.log("parsedHotDog", parsedHotDog);
-  //     });
-  //   }, []);
   console.log("PROPS", props, userHotDog);
   return (
     <>
@@ -29,7 +18,10 @@ export const UserHotDogForm = (props) => {
         {" "}
         Toppings: {userHotDog.hotDog.topping}
       </div>
-      <div className="time_stamp"> Date: {userHotDog.timeStamp}</div>
+      <div className="time_stamp">
+        {" "}
+        Date: {new Date(userHotDog.timeStamp).toLocaleDateString("en-us")}
+      </div>
       {/* <div className="is_favorite"> Favorite?: {userHotDog.favHotDog}</div> */}
       <div className="note"> Notes: {userHotDog.hotDogNote}</div>
       {/* <button>Delete</button> */}
