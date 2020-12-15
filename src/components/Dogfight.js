@@ -1,6 +1,7 @@
 import React from "react";
 import "./Dogfight.css";
 import { Route, Redirect } from "react-router-dom";
+import { NavBar } from "./nav/NavBar";
 import { Login } from "./auth/Login";
 import { Register } from "./auth/Register";
 import { ApplicationViews } from "./ApplicationViews";
@@ -13,6 +14,7 @@ export const Dogfight = () => (
         if (localStorage.getItem("dogfight_user_id")) {
           return (
             <>
+              <Route render={(props) => <NavBar {...props} />} />
               <Route render={(props) => <ApplicationViews {...props} />} />
             </>
           );

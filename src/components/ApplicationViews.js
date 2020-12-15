@@ -6,6 +6,8 @@ import { HotDogList } from "./hotDogs/HotDogList";
 import { UserHotDogProvider } from "./userHotDogs/UserHotDogDataProvider";
 import { UserHotDogList } from "./userHotDogs/UserHotDogList";
 import { UserHotDogForm } from "./userHotDogs/UserHotDogForm";
+import { WallOfWeinersList } from "./wallOfWeiners/WallOfWeinersList";
+import { UserProvider } from "./wallOfWeiners/WallOfWeinersDataProvider";
 
 export const ApplicationViews = (props) => {
   return (
@@ -37,6 +39,18 @@ export const ApplicationViews = (props) => {
           ></Route>
         </HotDogProvider>
       </UserHotDogProvider>
+
+      <UserProvider>
+        <Route
+          exact
+          path="/wallOfWeiners"
+          render={(props) => (
+            <>
+              <WallOfWeinersList {...props} />
+            </>
+          )}
+        />
+      </UserProvider>
     </>
   );
 };

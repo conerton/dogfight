@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { WallOfWeinersContext } from "./WallOfWeinersDataProvider";
 import { User } from "./WallOfWeiners";
+import "./WallOfWeiners.css";
 
 export const WallOfWeinersList = () => {
   const { users, getUsers } = useContext(WallOfWeinersContext);
@@ -11,8 +12,8 @@ export const WallOfWeinersList = () => {
 
   return (
     <div className="wallOfWeiners_List">
-      {users.map(() => (
-        <User key={users.id} users={u} />
+      {users.map((u) => (
+        <User key={u.id} user={u} />
       ))}
     </div>
   );
