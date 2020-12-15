@@ -1,31 +1,11 @@
 {
   "users": [
     {
-      "id": 1,
+      "email": "email@email.com",
+      "password": "hotdog",
       "firstName": "Shawn",
       "lastName": "Conerton",
-      "email": "email@email.com",
-      "password": "hotdog"
-    },
-    {
-      "id": 2,
-      "firstName": "Megan",
-      "lastName": "",
-      "email": "email@email.com",
-      "password": "hotdog"
-    },
-    {
-      "id": 3,
-      "firstName": "Wesley",
-      "lastName": "",
-      "email": "email@email.com",
-      "password": "hotdog"
-    },
-    {
-      "email": "happy@happy.com",
-      "password": "hotdog",
-      "name": "Jack Jackson",
-      "id": 4
+      "id": 1
     }
   ],
   "hotDogs": [
@@ -292,12 +272,12 @@
       "id": 5
     },
     {
-      "hotDogId": 18,
+      "hotDogId": 25,
       "userId": 1,
-      "hotDogNote": "Great Hot Dog!",
-      "timeStamp": 1608003899348,
-      "favHotDog": true,
-      "id": 6
+      "hotDogNote": "Another Chili Dog",
+      "timeStamp": 1608066505971,
+      "favHotDog": false,
+      "id": 7
     }
   ],
   "wallOfWeiners": []

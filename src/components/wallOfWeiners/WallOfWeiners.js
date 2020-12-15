@@ -1,14 +1,15 @@
-import userEvent from "@testing-library/user-event";
 import React from "react";
 import "./WallOfWeiners.css";
 
-export const User = () => {
-  <section className="wallOfWeiners_UserCard">
-    <div>
-      Name: {user.name}
-      Time it took to Complete:{}
-      Favorite Hot Dog: {user.favHotDog}
-      Date Complete:{}
-    </div>
-  </section>;
+export const User = ({ user }) => {
+  return (
+    <section className="wallOfWeiners_UserCard">
+      <ul className="userCard">
+        <li>Name: {user.firstName}</li>
+        <li>Time it took to Complete: </li>
+        <li>Favorite Hot Dog: </li>
+        <li>Date Complete: </li>
+      </ul>
+    </section>
+  );
 };
