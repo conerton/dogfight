@@ -4,15 +4,13 @@ import { UserHotDogContext } from "./UserHotDogDataProvider";
 import "./UserHotDog.css";
 
 export const UserHotDogForm = (props) => {
-  const { getUserHotDogsById } = useContext(UserHotDogContext);
-  const [userHotDog, setUserHotDog] = useState({});
+  const { getUserHotDogsById, userHotDog } = useContext(UserHotDogContext);
+
   //   const { getHotDogById } = useContext(HotDogContext);
   //   const [hotDog, setHotDog] = useState({});
 
   useEffect(() => {
-    getUserHotDogsById(
-      props.match.params.userHotDogId
-    ).then((parsedUserHotDog) => setUserHotDog(parsedUserHotDog));
+    getUserHotDogsById(+props.match.params.userHotDogId);
   }, []);
 
   //   useEffect(() => {
@@ -23,15 +21,18 @@ export const UserHotDogForm = (props) => {
   //       console.log("parsedHotDog", parsedHotDog);
   //     });
   //   }, []);
-
+  console.log("PROPS", props, userHotDog);
   return (
     <>
-      <h3 className="hotdog_name"> Name: {userHotDog.name}</h3>
-      <div className="hotdog_toppings"> Toppings: {userHotDog.toppings}</div>
+      <h3 className="hotdog_name"> Name: {userHotDog.hotDog.name}</h3>
+      <div className="hotdog_toppings">
+        {" "}
+        Toppings: {userHotDog.hotDog.topping}
+      </div>
       <div className="time_stamp"> Date: {userHotDog.timeStamp}</div>
-      <div className="is_favorite"> Favorite?: {userHotDog.favHotDog}</div>
+      {/* <div className="is_favorite"> Favorite?: {userHotDog.favHotDog}</div> */}
       <div className="note"> Notes: {userHotDog.hotDogNote}</div>
-      <button>Delete</button>
+      {/* <button>Delete</button> */}
     </>
   );
 };

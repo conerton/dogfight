@@ -8,8 +8,7 @@ export const HotDogProvider = (props) => {
   const getHotDogs = () => {
     return fetch("http://localhost:8088/hotDogs")
       .then((res) => res.json())
-      .then(setHotDogs)
-      .then((hd) => console.log(hd));
+      .then(setHotDogs);
   };
 
   const getHotDogById = (id) => {

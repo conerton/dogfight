@@ -25,7 +25,9 @@ export const UserHotDog = ({ userHotDog, props }) => {
       <div className="user_hotDog_name">
         <Link to={`/userHotDogs/${userHotDog.id}`}>{userHotDog.hotDogId}</Link>
       </div>
-      <div className="is_favorite"> Favorite?: </div>
+      <form>
+        <div className="is_favorite"> Favorite?: </div>
+      </form>
       <button
         className="delete_button"
         onClick={() => {
