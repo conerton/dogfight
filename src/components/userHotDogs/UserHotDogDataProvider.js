@@ -25,6 +25,16 @@ export const UserHotDogProvider = (props) => {
     }).then(getUserHotDogs);
   };
 
+  const editUserHotDog = (favHotDog) => {
+    return fetch(`http://localhost:8088/userHotDogs/${favHotDog.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(favHotDog),
+    }).then(getUserHotDogs);
+  };
+
   return (
     <UserHotDogContext.Provider
       value={{
@@ -33,6 +43,7 @@ export const UserHotDogProvider = (props) => {
         getUserHotDogs,
         getUserHotDogsById,
         deleteUserHotDog,
+        editUserHotDog,
       }}
     >
       {props.children}
