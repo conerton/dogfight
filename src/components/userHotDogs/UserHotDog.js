@@ -1,13 +1,26 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState, useRef } from "react";
 import "./UserHotDog.css";
 import { Link } from "react-router-dom";
 import { UserHotDogContext } from "./UserHotDogDataProvider";
 
 export const UserHotDog = ({ userHotDog, props }) => {
-  const { userHotDogs, getUserHotDogById, deleteUserHotDog } = useContext(
+  const { getUserHotDogById, deleteUserHotDog, editUserHotDog } = useContext(
     UserHotDogContext
   );
-  const [checked, setChecked] = React.useState(false);
+
+  // const [checked, setChecked] = useState(false);
+  const fav = useRef(false);
+
+  const favoriteChoosen = () => {
+    editUserHotDog({
+      hotDogId: parseInt(userHotDog.hotDogId),
+      userId: parseInt(userHotDog.userId),
+      hotDogNote: userHotDog.hotDogNote,
+      timeStamp: userHotDog.timeStamp,
+      favHotDog: fav.current.checked,
+      id: parseInt(userHotDog.id),
+    }).then(() => props.history.push("/"));
+  };
   return (
     <section className="userHotDog">
       <div className="user_hotDog_name">
@@ -17,12 +30,13 @@ export const UserHotDog = ({ userHotDog, props }) => {
         <label>
           Favorite?:{" "}
           <input
+            ref={fav}
             type="radio"
+            value={userHotDog.userId}
             name="favHotDog"
-            value="favHotDog"
-            checked={checked}
+            // checked={checked}
             className="is_favorite"
-            onChange={() => setChecked(!checked)}
+            onChange={favoriteChoosen}
           />{" "}
         </label>
       </form>
@@ -51,3 +65,12 @@ export const UserHotDog = ({ userHotDog, props }) => {
 // }, []);
 
 //this part of my code is broken and I have no idea why. It is not liking the Link. Cannot read 'id'
+
+//TED CODE
+// const [userHotDog, setUserHotDog] = useState({});
+
+// const handleFavHotDog = (e) => {
+//   const changeValue = Object.assign({}, userHotDog);
+//   changeValue[e.target.name] = Boolean(e.target.checked);
+//   setUserHotDog(changeValue);
+// };
