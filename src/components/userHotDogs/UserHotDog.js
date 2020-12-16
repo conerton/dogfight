@@ -15,6 +15,7 @@ export const UserHotDog = ({ userHotDog, hotDog, props }) => {
   // const [checked, setChecked] = useState(false);
   const fav = useRef(false);
 
+  //this is implementing the radio button
   const favoriteChoosen = () => {
     editUserHotDog({
       hotDogId: parseInt(userHotDog.hotDogId),
@@ -69,7 +70,7 @@ export const UserHotDog = ({ userHotDog, hotDog, props }) => {
 
 //this part of my code is broken and I have no idea why. It is not liking the Link. Cannot read 'id'
 
-//TED CODE
+//TEST CODE
 // const [userHotDog, setUserHotDog] = useState({});
 
 // const handleFavHotDog = (e) => {

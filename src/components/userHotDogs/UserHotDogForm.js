@@ -6,6 +6,7 @@ import "./UserHotDog.css";
 export const UserHotDogForm = (props) => {
   const { getUserHotDogsById, userHotDog } = useContext(UserHotDogContext);
 
+  //parse int then going through props to find the specific Id
   useEffect(() => {
     getUserHotDogsById(+props.match.params.userHotDogId);
   }, []);
@@ -22,9 +23,8 @@ export const UserHotDogForm = (props) => {
         {" "}
         Date: {new Date(userHotDog.timeStamp).toLocaleDateString("en-us")}
       </div>
-      {/* <div className="is_favorite"> Favorite?: {userHotDog.favHotDog}</div> */}
+
       <div className="note"> Notes: {userHotDog.hotDogNote}</div>
-      {/* <button>Delete</button> */}
     </>
   );
 };

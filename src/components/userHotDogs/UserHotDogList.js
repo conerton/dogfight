@@ -8,18 +8,16 @@ export const UserHotDogList = (props) => {
   const { userHotDogs, getUserHotDogs } = useContext(UserHotDogContext);
   const { hotDogs, getHotDogs } = useContext(HotDogContext);
 
+  //you need to get all hotdogs before you can get user hot dogs to find the name
   useEffect(() => {
     getHotDogs().then(getUserHotDogs);
   }, []);
   console.log("HOTDOGS", hotDogs);
 
-  const currentUser = localStorage.getItem("dogfight_user_id");
-  const currentUserHotDogs = userHotDogs.filter(
-    (u) => u.userId === +currentUser
-  );
-  console.log("CURRENT USER", currentUserHotDogs);
-  const currentUserPostedHotDogs = currentUserHotDogs.filter(() => {});
+  // mapping through userHotDogs from userHotDogProvider to pass in userHotDog, hotDog
 
+  // I am bringing in hotDogs and using the find function to match the hotdog.id and
+  //userHotDogId to pass into user hotdogs; in userHotDogs I call hotdog.name to find the name.
   return (
     <div className="userHotDogs">
       {userHotDogs.map((uhd) => {
