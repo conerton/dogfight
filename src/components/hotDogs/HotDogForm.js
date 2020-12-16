@@ -14,6 +14,7 @@ export const HotDogForm = (props) => {
     );
   }, []);
 
+  //add the notes to the json
   const addToList = () => {
     const hotDogId = parseInt(props.match.params.hotDogId);
     const userId = parseInt(localStorage.getItem("dogfight_user_id"));

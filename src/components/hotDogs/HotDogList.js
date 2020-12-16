@@ -11,6 +11,7 @@ export const HotDogList = () => {
     getHotDogs();
   }, []);
 
+  //maps through the array of hotDogs from HotDogProvider to pass hotDog to HotDog
   return (
     <div className="hotDogs">
       {hotDogs.map((hd) => (

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 export const UserHotDogContext = React.createContext();
 
 export const UserHotDogProvider = (props) => {
+  //this is the set all hotDogs
   const [userHotDogs, setUserHotDogs] = useState([]);
   //defined state varible for single user hotdog with hotdog object from the expand query parameter from the user hotdog fetch
   const [userHotDog, setUserHotDog] = useState({ hotDog: {} });

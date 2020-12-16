@@ -10,6 +10,8 @@ export const WallOfWeinersList = () => {
     getUsers();
   }, []);
 
+  // const allHotDogsAte = users.map(user);
+
   return (
     <div className="wallOfWeiners_List">
       {users.map((u) => (
