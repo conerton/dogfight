@@ -6,6 +6,20 @@
       "firstName": "Shawn",
       "lastName": "Conerton",
       "id": 1
+    },
+    {
+      "email": "bob@smith.com",
+      "password": "hotdog",
+      "firstName": "Bob",
+      "lastName": "Smith",
+      "id": 2
+    },
+    {
+      "email": "sam@sam.com",
+      "password": "hotdog",
+      "firstName": "Sam",
+      "lastName": "sam",
+      "id": 3
     }
   ],
   "hotDogs": [
@@ -234,7 +248,7 @@
     {
       "id": 38,
       "name": "Seattle",
-      "toppings": "Sauerkraut, Onions, Cream Cheese",
+      "topping": "Sauerkraut, Onions, Cream Cheese",
       "image": ""
     }
   ],
@@ -286,6 +300,14 @@
       "timeStamp": 1608087753455,
       "favHotDog": false,
       "id": 8
+    },
+    {
+      "hotDogId": 4,
+      "userId": 2,
+      "hotDogNote": "note",
+      "timeStamp": 1608141864457,
+      "favHotDog": false,
+      "id": 9
     }
   ],
   "wallOfWeiners": []
