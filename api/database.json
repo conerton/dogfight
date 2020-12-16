@@ -276,8 +276,16 @@
       "userId": 1,
       "hotDogNote": "Another Chili Dog",
       "timeStamp": 1608066505971,
-      "favHotDog": false,
+      "favHotDog": true,
       "id": 7
+    },
+    {
+      "hotDogId": 28,
+      "userId": 1,
+      "hotDogNote": "does this work?",
+      "timeStamp": 1608087753455,
+      "favHotDog": false,
+      "id": 8
     }
   ],
   "wallOfWeiners": []

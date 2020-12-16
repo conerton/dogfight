@@ -3,11 +3,15 @@ import "./UserHotDog.css";
 import { Link } from "react-router-dom";
 import { UserHotDogContext } from "./UserHotDogDataProvider";
 
-export const UserHotDog = ({ userHotDog, props }) => {
-  const { getUserHotDogById, deleteUserHotDog, editUserHotDog } = useContext(
-    UserHotDogContext
-  );
+export const UserHotDog = ({ userHotDog, hotDog, props }) => {
+  const { deleteUserHotDog, editUserHotDog } = useContext(UserHotDogContext);
 
+  // console.log("HOTDOGS", hotDog);
+  // console.log("USER HD", userHotDogs);
+
+  // useEffect(() => {
+  //   getUserHotDogById(+props.match.params.userHotDogId);
+  // }, []);
   // const [checked, setChecked] = useState(false);
   const fav = useRef(false);
 
@@ -24,7 +28,7 @@ export const UserHotDog = ({ userHotDog, props }) => {
   return (
     <section className="userHotDog">
       <div className="user_hotDog_name">
-        <Link to={`/userHotDogs/${userHotDog.id}`}>{userHotDog.hotDogId}</Link>
+        <Link to={`/userHotDogs/${userHotDog.id}`}>{hotDog.name}</Link>
       </div>
       <form>
         <label>
@@ -34,7 +38,6 @@ export const UserHotDog = ({ userHotDog, props }) => {
             type="radio"
             value={userHotDog.userId}
             name="favHotDog"
-            // checked={checked}
             className="is_favorite"
             onChange={favoriteChoosen}
           />{" "}
