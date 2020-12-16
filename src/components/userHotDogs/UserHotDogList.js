@@ -13,7 +13,13 @@ export const UserHotDogList = (props) => {
   }, []);
   console.log("HOTDOGS", hotDogs);
 
-  //added delete button here to try and SOMETHING ANYTHING HELP ME
+  const currentUser = localStorage.getItem("dogfight_user_id");
+  const currentUserHotDogs = userHotDogs.filter(
+    (u) => u.userId === +currentUser
+  );
+  console.log("CURRENT USER", currentUserHotDogs);
+  const currentUserPostedHotDogs = currentUserHotDogs.filter(() => {});
+
   return (
     <div className="userHotDogs">
       {userHotDogs.map((uhd) => {
@@ -28,7 +34,6 @@ export const UserHotDogList = (props) => {
           />
         );
       })}
-      {/* <button>delete</button> */}
     </div>
   );
 };

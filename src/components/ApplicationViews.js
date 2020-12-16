@@ -9,6 +9,9 @@ import { UserHotDogForm } from "./userHotDogs/UserHotDogForm";
 import { WallOfWeinersList } from "./wallOfWeiners/WallOfWeinersList";
 import { UserProvider } from "./wallOfWeiners/WallOfWeinersDataProvider";
 
+// const currentUser = localStorage.getItem("dogfight_user_id");
+// const currentUserHotDogs = userHotDogs.filter((u) => u.userId === +currentUser);
+
 export const ApplicationViews = (props) => {
   return (
     <>
