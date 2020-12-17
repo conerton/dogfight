@@ -14,6 +14,12 @@ export const UserHotDogList = (props) => {
   }, []);
   console.log("HOTDOGS", hotDogs);
 
+  // if ((userHotDogs.hotDogId.length = 38)) {
+  //   userHotDogs.then(() => props.history.push("/wallOfWeiners"));
+  // } else {
+  //   null;
+  // }
+
   // mapping through userHotDogs from userHotDogProvider to pass in userHotDog, hotDog
 
   // I am bringing in hotDogs and using the find function to match the hotdog.id and
