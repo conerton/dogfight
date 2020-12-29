@@ -10,7 +10,9 @@ export const UserHotDogProvider = (props) => {
 
   const user = localStorage.getItem("dogfight_user_id");
   const getUserHotDogs = () => {
-    return fetch(`http://localhost:8088/userHotDogs/?userId=${user}`)
+    return fetch(
+      `http://localhost:8088/userHotDogs/?userId=${user}&_expand=hotDog`
+    )
       .then((res) => res.json())
       .then(setUserHotDogs);
   };
