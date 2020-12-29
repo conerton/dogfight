@@ -1,3 +1,15 @@
 .hotDogs {
   border-style: solid;
+  background-color: red;
+}
+
+.hotDog {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  background-color: ;
+}
+
+.div.hotDog_name {
+  background-color: white;
 }

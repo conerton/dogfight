@@ -27,6 +27,20 @@
       "firstName": "biil",
       "lastName": "bill",
       "id": 4
+    },
+    {
+      "email": "hot@dog.com",
+      "password": "hotdog",
+      "firstName": "Hawt",
+      "lastName": "Dawg",
+      "id": 5
+    },
+    {
+      "email": "happy@birthday",
+      "password": "hotdog",
+      "firstName": "HOT DOG!!",
+      "lastName": "yep",
+      "id": 6
     }
   ],
   "hotDogs": [
@@ -1011,6 +1025,606 @@
       "timeStamp": 1608241849213,
       "favHotDog": false,
       "id": 96
+    },
+    {
+      "hotDogId": 1,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303095109,
+      "favHotDog": false,
+      "id": 97
+    },
+    {
+      "hotDogId": 2,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303098464,
+      "favHotDog": false,
+      "id": 98
+    },
+    {
+      "hotDogId": 3,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303101836,
+      "favHotDog": false,
+      "id": 99
+    },
+    {
+      "hotDogId": 4,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303109940,
+      "favHotDog": false,
+      "id": 100
+    },
+    {
+      "hotDogId": 5,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303114261,
+      "favHotDog": false,
+      "id": 101
+    },
+    {
+      "hotDogId": 6,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303117206,
+      "favHotDog": false,
+      "id": 102
+    },
+    {
+      "hotDogId": 7,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303129728,
+      "favHotDog": false,
+      "id": 103
+    },
+    {
+      "hotDogId": 8,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303133530,
+      "favHotDog": false,
+      "id": 104
+    },
+    {
+      "hotDogId": 9,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303138123,
+      "favHotDog": false,
+      "id": 105
+    },
+    {
+      "hotDogId": 10,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303149607,
+      "favHotDog": false,
+      "id": 106
+    },
+    {
+      "hotDogId": 11,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303161634,
+      "favHotDog": false,
+      "id": 107
+    },
+    {
+      "hotDogId": 12,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303169914,
+      "favHotDog": false,
+      "id": 108
+    },
+    {
+      "hotDogId": 13,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303173559,
+      "favHotDog": false,
+      "id": 109
+    },
+    {
+      "hotDogId": 14,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303177901,
+      "favHotDog": false,
+      "id": 110
+    },
+    {
+      "hotDogId": 15,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303181220,
+      "favHotDog": false,
+      "id": 111
+    },
+    {
+      "hotDogId": 16,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303185371,
+      "favHotDog": false,
+      "id": 112
+    },
+    {
+      "hotDogId": 17,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303188985,
+      "favHotDog": false,
+      "id": 113
+    },
+    {
+      "hotDogId": 18,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303207489,
+      "favHotDog": false,
+      "id": 114
+    },
+    {
+      "hotDogId": 19,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303211393,
+      "favHotDog": false,
+      "id": 115
+    },
+    {
+      "hotDogId": 20,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303215409,
+      "favHotDog": false,
+      "id": 116
+    },
+    {
+      "hotDogId": 21,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303231069,
+      "favHotDog": false,
+      "id": 117
+    },
+    {
+      "hotDogId": 22,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303234782,
+      "favHotDog": false,
+      "id": 118
+    },
+    {
+      "hotDogId": 23,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303238315,
+      "favHotDog": false,
+      "id": 119
+    },
+    {
+      "hotDogId": 24,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303245087,
+      "favHotDog": false,
+      "id": 120
+    },
+    {
+      "hotDogId": 25,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303248631,
+      "favHotDog": false,
+      "id": 121
+    },
+    {
+      "hotDogId": 26,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303255359,
+      "favHotDog": false,
+      "id": 122
+    },
+    {
+      "hotDogId": 27,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303259466,
+      "favHotDog": false,
+      "id": 123
+    },
+    {
+      "hotDogId": 28,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303266508,
+      "favHotDog": false,
+      "id": 124
+    },
+    {
+      "hotDogId": 29,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303270288,
+      "favHotDog": false,
+      "id": 125
+    },
+    {
+      "hotDogId": 30,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303283485,
+      "favHotDog": false,
+      "id": 126
+    },
+    {
+      "hotDogId": 31,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303295544,
+      "favHotDog": false,
+      "id": 127
+    },
+    {
+      "hotDogId": 32,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303299066,
+      "favHotDog": false,
+      "id": 128
+    },
+    {
+      "hotDogId": 33,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303322355,
+      "favHotDog": false,
+      "id": 129
+    },
+    {
+      "hotDogId": 34,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303329059,
+      "favHotDog": false,
+      "id": 130
+    },
+    {
+      "hotDogId": 35,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303335663,
+      "favHotDog": false,
+      "id": 131
+    },
+    {
+      "hotDogId": 36,
+      "userId": 5,
+      "hotDogNote": "a",
+      "timeStamp": 1608303341367,
+      "favHotDog": false,
+      "id": 132
+    },
+    {
+      "hotDogId": 1,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304137092,
+      "favHotDog": true,
+      "id": 133
+    },
+    {
+      "hotDogId": 2,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304140842,
+      "favHotDog": false,
+      "id": 134
+    },
+    {
+      "hotDogId": 3,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304144473,
+      "favHotDog": false,
+      "id": 135
+    },
+    {
+      "hotDogId": 4,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304152305,
+      "favHotDog": false,
+      "id": 136
+    },
+    {
+      "hotDogId": 5,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304159256,
+      "favHotDog": false,
+      "id": 137
+    },
+    {
+      "hotDogId": 6,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304165995,
+      "favHotDog": false,
+      "id": 138
+    },
+    {
+      "hotDogId": 7,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304170665,
+      "favHotDog": false,
+      "id": 139
+    },
+    {
+      "hotDogId": 8,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304176660,
+      "favHotDog": false,
+      "id": 140
+    },
+    {
+      "hotDogId": 9,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304181064,
+      "favHotDog": false,
+      "id": 141
+    },
+    {
+      "hotDogId": 10,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304193864,
+      "favHotDog": false,
+      "id": 142
+    },
+    {
+      "hotDogId": 11,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304198497,
+      "favHotDog": false,
+      "id": 143
+    },
+    {
+      "hotDogId": 12,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304206597,
+      "favHotDog": false,
+      "id": 144
+    },
+    {
+      "hotDogId": 13,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304212402,
+      "favHotDog": false,
+      "id": 145
+    },
+    {
+      "hotDogId": 14,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304217881,
+      "favHotDog": false,
+      "id": 146
+    },
+    {
+      "hotDogId": 15,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304221918,
+      "favHotDog": false,
+      "id": 147
+    },
+    {
+      "hotDogId": 16,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304227600,
+      "favHotDog": false,
+      "id": 148
+    },
+    {
+      "hotDogId": 17,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304231508,
+      "favHotDog": false,
+      "id": 149
+    },
+    {
+      "hotDogId": 18,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304235453,
+      "favHotDog": false,
+      "id": 150
+    },
+    {
+      "hotDogId": 19,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304238909,
+      "favHotDog": false,
+      "id": 151
+    },
+    {
+      "hotDogId": 20,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304247090,
+      "favHotDog": false,
+      "id": 152
+    },
+    {
+      "hotDogId": 21,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304254556,
+      "favHotDog": false,
+      "id": 153
+    },
+    {
+      "hotDogId": 22,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304258179,
+      "favHotDog": false,
+      "id": 154
+    },
+    {
+      "hotDogId": 23,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304262749,
+      "favHotDog": false,
+      "id": 155
+    },
+    {
+      "hotDogId": 24,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304266618,
+      "favHotDog": false,
+      "id": 156
+    },
+    {
+      "hotDogId": 25,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304271699,
+      "favHotDog": false,
+      "id": 157
+    },
+    {
+      "hotDogId": 26,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304277294,
+      "favHotDog": false,
+      "id": 158
+    },
+    {
+      "hotDogId": 27,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304288417,
+      "favHotDog": false,
+      "id": 159
+    },
+    {
+      "hotDogId": 28,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304294134,
+      "favHotDog": false,
+      "id": 160
+    },
+    {
+      "hotDogId": 29,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304326815,
+      "favHotDog": false,
+      "id": 161
+    },
+    {
+      "hotDogId": 30,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304332518,
+      "favHotDog": false,
+      "id": 162
+    },
+    {
+      "hotDogId": 31,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304341777,
+      "favHotDog": false,
+      "id": 163
+    },
+    {
+      "hotDogId": 32,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304390173,
+      "favHotDog": false,
+      "id": 164
+    },
+    {
+      "hotDogId": 33,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304407755,
+      "favHotDog": false,
+      "id": 165
+    },
+    {
+      "hotDogId": 34,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304412893,
+      "favHotDog": false,
+      "id": 166
+    },
+    {
+      "hotDogId": 36,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304426809,
+      "favHotDog": false,
+      "id": 168
+    },
+    {
+      "hotDogId": 37,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304444098,
+      "favHotDog": false,
+      "id": 169
+    },
+    {
+      "hotDogId": 33,
+      "userId": 6,
+      "hotDogNote": "a",
+      "timeStamp": 1608304481987,
+      "favHotDog": false,
+      "id": 170
+    },
+    {
+      "hotDogId": 38,
+      "userId": 6,
+      "hotDogNote": "Last hot dog",
+      "timeStamp": 1608393826598,
+      "favHotDog": false,
+      "id": 171
+    },
+    {
+      "hotDogId": 1,
+      "userId": 6,
+      "hotDogNote": "hotdog",
+      "timeStamp": 1608407659424,
+      "favHotDog": false,
+      "id": 172
     }
   ],
   "wallOfWeiners": []
