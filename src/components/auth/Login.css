@@ -1,0 +1,17 @@
+.container--login {
+  background-color: red;
+  padding-bottom: 200%;
+  padding-top: 10px;
+}
+
+.login {
+  /* text-align: center; */
+  font-family: "Alpha Sausage", cursive;
+  color: white;
+  padding-top: 20px;
+
+  text-shadow: 2px 2px red;
+
+  vertical-align: middle;
+  /* text-shadow: 1px 1px white; */
+}

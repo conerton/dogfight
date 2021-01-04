@@ -21,12 +21,16 @@
 .user_hotDog_name {
   font-family: "Architects Daughter", cursive;
   font-weight: 900;
+  text-shadow: 1px 1px black;
 }
 .time_stamp {
   font-family: "Architects Daughter", cursive;
+  /* text-shadow: 1px 1px black; */
 }
 .note {
   font-family: "Architects Daughter", cursive;
+  /* color: white;
+  text-shadow: 1px 1px black; */
 }
 
 .userHotDogTitle {
@@ -43,4 +47,5 @@
   font-family: "Architects Daughter", cursive;
   color: white;
   font-weight: 900;
+  text-shadow: 1px 1px black;
 }
