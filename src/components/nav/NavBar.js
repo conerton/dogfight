@@ -13,16 +13,18 @@ export const NavBar = (props) => {
       <div className="logo">
         <img src={logo} alt="Cori's DogHouse Logo" />
       </div>
-      <h1 className="name">Cori's Dogfight</h1>
-      <div>
-        <Link className="navbar_link" to="/">
-          Home
-        </Link>
-      </div>
-      <div>
-        <Link className="navbar_link" to="/wallOfWeiners">
-          Wall Of Weiners
-        </Link>
+      <div className="div">
+        <h1 className="name">Cori's Dogfight</h1>
+        <div>
+          <Link className="navbar_home" to="/">
+            Home
+          </Link>
+        </div>
+        <div>
+          <Link className="navbar_wall" to="/wallOfWeiners">
+            Wall Of Weiners
+          </Link>
+        </div>
       </div>
     </div>
   );

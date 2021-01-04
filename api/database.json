@@ -327,7 +327,7 @@
       "userId": 2,
       "hotDogNote": "note",
       "timeStamp": 1608141864457,
-      "favHotDog": false,
+      "favHotDog": true,
       "id": 9
     },
     {
@@ -1633,6 +1633,14 @@
       "timeStamp": 1609264237677,
       "favHotDog": false,
       "id": 173
+    },
+    {
+      "hotDogId": 2,
+      "userId": 2,
+      "hotDogNote": "Look at this!",
+      "timeStamp": 1609777743564,
+      "favHotDog": false,
+      "id": 174
     }
   ],
   "wallOfWeiners": []

@@ -1,6 +1,9 @@
 .navbar {
   background-color: red;
   display: flex;
+  /* flex-direction: row; */
+  /* justify-content: space-evenly; */
+  /* align-items: center; */
 }
 
 .logo {
@@ -8,20 +11,30 @@
   /* margin-right: 59%; */
 }
 
-.navbar_link {
+.navbar_home {
   font-family: "Architects Daughter", cursive;
   font-weight: bolder;
-
-  align-self: flex-end;
+  text-align: center;
+  /* border-style: solid; */
+  /* order: 3; */
+  /* align-self: flex-end; */
 }
-
+.navbar_wall {
+  font-family: "Architects Daughter", cursive;
+  font-weight: bolder;
+  /* border-style: solid; */
+  /* align-self: flex-end; */
+}
 .name {
   text-align: center;
   font-family: "Architects Daughter", cursive;
   color: gold;
   padding-top: 20px;
-  border-style: double;
+  /* border-style: double; */
   text-shadow: 2px 2px red;
+  /* align-self: flex-end; */
+  vertical-align: middle;
+  text-shadow: 1px 1px white;
 }
 
 a:link {

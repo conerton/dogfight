@@ -2,7 +2,12 @@
   border-style: solid;
   border-color: white;
   background-color: gold;
-  width: 45%;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-family: "Architects Daughter", cursive;
+  padding-right: 30px;
+  /* text-align: center; */
+  /* width: 45%; */
 }
 
 .wallOfWeiners_List {
@@ -23,9 +28,4 @@
   border-style: double;
   border-color: white;
   border-radius: 10%;
-}
-
-.userCard {
-  text-align: center;
-  font-family: "Architects Daughter", cursive;
 }
