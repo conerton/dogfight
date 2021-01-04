@@ -29,10 +29,14 @@ export const UserHotDog = ({ userHotDog, hotDog, props }) => {
   return (
     <section className="userHotDog">
       <div className="user_hotDog_name">
+        <style>
+          @import
+          url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+        </style>
         <Link to={`/userHotDogs/${userHotDog.id}`}>{hotDog.name}</Link>
       </div>
       <form>
-        <label>
+        <label className="favorite">
           Favorite?:{" "}
           <input
             ref={fav}

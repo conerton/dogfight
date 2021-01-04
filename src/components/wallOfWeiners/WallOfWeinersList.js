@@ -14,6 +14,7 @@ export const WallOfWeinersList = (props) => {
 
   return (
     <div className="wallOfWeiners_List">
+      <h1 className="wallOfWeiners_title">WALL OF WEINERS ALUMNI</h1>
       {users.map((u) => {
         // const userOnWall = userHotDogs.find((uhd) => uhd.userId === u.id);
 

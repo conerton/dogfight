@@ -14,17 +14,19 @@ export const UserHotDogForm = (props) => {
   console.log("PROPS", props, userHotDog);
   return (
     <>
-      <h3 className="hotdog_name"> Name: {userHotDog.hotDog.name}</h3>
-      <div className="hotdog_toppings">
-        {" "}
-        Toppings: {userHotDog.hotDog.topping}
-      </div>
-      <div className="time_stamp">
-        {" "}
-        Date: {new Date(userHotDog.timeStamp).toLocaleDateString("en-us")}
-      </div>
+      <div className="userHotDogs">
+        <h3 className="hotDog_name_form"> Name: {userHotDog.hotDog.name}</h3>
+        <div className="hotDog_toppings">
+          {" "}
+          Toppings: {userHotDog.hotDog.topping}
+        </div>
+        <div className="time_stamp">
+          {" "}
+          Date: {new Date(userHotDog.timeStamp).toLocaleDateString("en-us")}
+        </div>
 
-      <div className="note"> Notes: {userHotDog.hotDogNote}</div>
+        <div className="note"> Notes: {userHotDog.hotDogNote}</div>
+      </div>
     </>
   );
 };

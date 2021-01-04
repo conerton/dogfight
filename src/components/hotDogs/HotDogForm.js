@@ -41,9 +41,11 @@ export const HotDogForm = (props) => {
       {console.log(hotDog)}
       <form className="hotDogs">
         <fieldset>
-          <h3 className="hotDog_name"> Name: {hotDog.name}</h3>
+          <h3 className="hotDog_name_form"> Name: {hotDog.name}</h3>
           <div className="hotDog_toppings"> Toppings: {hotDog.topping}</div>
-          <label htmlFor="hotDog_note">Add a note!</label>
+          <label className="hotDog_note" htmlFor="hotDog_note">
+            Add a note!
+          </label>
           <input
             type="text"
             name="name"

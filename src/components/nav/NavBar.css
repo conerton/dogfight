@@ -1,1 +1,34 @@
+.navbar {
+  background-color: red;
+  display: flex;
+}
 
+.logo {
+  /* border-style: dotted; */
+  /* margin-right: 59%; */
+}
+
+.navbar_link {
+  font-family: "Architects Daughter", cursive;
+  font-weight: bolder;
+
+  align-self: flex-end;
+}
+
+.name {
+  text-align: center;
+  font-family: "Architects Daughter", cursive;
+  color: gold;
+  padding-top: 20px;
+  border-style: double;
+  text-shadow: 2px 2px red;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  text-decoration: none;
+  color: white;
+}
