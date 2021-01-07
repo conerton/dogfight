@@ -18,28 +18,28 @@
       "email": "sam@sam.com",
       "password": "hotdog",
       "firstName": "Sam",
-      "lastName": "sam",
+      "lastName": "Smith",
       "id": 3
     },
     {
       "email": "bill@bill.com",
       "password": "hotdog",
-      "firstName": "biil",
-      "lastName": "bill",
+      "firstName": "Bill",
+      "lastName": "Williams",
       "id": 4
     },
     {
       "email": "hot@dog.com",
       "password": "hotdog",
-      "firstName": "Hawt",
+      "firstName": "Hot",
       "lastName": "Dawg",
       "id": 5
     },
     {
       "email": "happy@birthday",
       "password": "hotdog",
-      "firstName": "HOT DOG!!",
-      "lastName": "yep",
+      "firstName": "Frank",
+      "lastName": "Furter",
       "id": 6
     }
   ],
@@ -327,7 +327,7 @@
       "userId": 2,
       "hotDogNote": "note",
       "timeStamp": 1608141864457,
-      "favHotDog": false,
+      "favHotDog": true,
       "id": 9
     },
     {
@@ -665,14 +665,6 @@
       "timeStamp": 1608231194712,
       "favHotDog": false,
       "id": 51
-    },
-    {
-      "hotDogId": 4,
-      "userId": 1,
-      "hotDogNote": "4",
-      "timeStamp": 1608239951427,
-      "favHotDog": false,
-      "id": 52
     },
     {
       "hotDogId": 1,
@@ -1315,19 +1307,11 @@
       "id": 132
     },
     {
-      "hotDogId": 1,
-      "userId": 6,
-      "hotDogNote": "a",
-      "timeStamp": 1608304137092,
-      "favHotDog": true,
-      "id": 133
-    },
-    {
       "hotDogId": 2,
       "userId": 6,
-      "hotDogNote": "a",
+      "hotDogNote": "This is one tasty hot dog!",
       "timeStamp": 1608304140842,
-      "favHotDog": false,
+      "favHotDog": true,
       "id": 134
     },
     {
@@ -1619,12 +1603,28 @@
       "id": 171
     },
     {
-      "hotDogId": 1,
-      "userId": 6,
-      "hotDogNote": "hotdog",
-      "timeStamp": 1608407659424,
+      "hotDogId": 14,
+      "userId": 2,
+      "hotDogNote": "note",
+      "timeStamp": 1609264237677,
       "favHotDog": false,
-      "id": 172
+      "id": 173
+    },
+    {
+      "hotDogId": 2,
+      "userId": 2,
+      "hotDogNote": "Look at this!",
+      "timeStamp": 1609777743564,
+      "favHotDog": false,
+      "id": 174
+    },
+    {
+      "hotDogId": 11,
+      "userId": 6,
+      "hotDogNote": "q",
+      "timeStamp": 1609790546060,
+      "favHotDog": false,
+      "id": 175
     }
   ],
   "wallOfWeiners": []

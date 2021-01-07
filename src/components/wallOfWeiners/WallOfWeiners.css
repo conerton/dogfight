@@ -1,4 +1,31 @@
 .wallOfWeiners_UserCard {
   border-style: solid;
-  border-color: red;
+  border-color: white;
+  background-color: gold;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-family: "Architects Daughter", cursive;
+  padding-right: 30px;
+  /* text-align: center; */
+  /* width: 45%; */
+}
+
+.wallOfWeiners_List {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.wallOfWeiners_title {
+  font-family: "Architects Daughter", cursive;
+  color: white;
+  text-align: center;
+  background-color: gold;
+  text-shadow: 2px 2px black;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-style: double;
+  border-color: white;
+  border-radius: 10%;
 }

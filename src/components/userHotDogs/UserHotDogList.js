@@ -26,6 +26,7 @@ export const UserHotDogList = (props) => {
   //userHotDogId to pass into user hotdogs; in userHotDogs I call hotdog.name to find the name.
   return (
     <div className="userHotDogs">
+      <h2 className="userHotDogTitle"> EATEN HOT DOGS</h2>
       {userHotDogs.map((uhd) => {
         const hotDogName = hotDogs.find((hd) => hd.id === uhd.hotDogId);
         console.log("HOT DOG NAME", hotDogName);
