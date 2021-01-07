@@ -13,12 +13,15 @@ export const WallOfWeinersList = (props) => {
   }, []);
 
   return (
-    <div className="wallOfWeiners_List">
-      {users.map((u) => {
-        // const userOnWall = userHotDogs.find((uhd) => uhd.userId === u.id);
+    <div className="form">
+      <div className="wallOfWeiners_List">
+        <h1 className="wallOfWeiners_title">WALL OF WEINERS ALUMNI</h1>
+        {users.map((u) => {
+          // const userOnWall = userHotDogs.find((uhd) => uhd.userId === u.id);
 
-        return <User key={u.id} user={u} props={props} />;
-      })}
+          return <User key={u.id} user={u} props={props} />;
+        })}
+      </div>
     </div>
   );
 };

@@ -39,30 +39,34 @@ export const HotDogForm = (props) => {
   return (
     <>
       {console.log(hotDog)}
-      <form className="hotDogs">
-        <fieldset>
-          <h3 className="hotDog_name"> Name: {hotDog.name}</h3>
-          <div className="hotDog_toppings"> Toppings: {hotDog.topping}</div>
-          <label htmlFor="hotDog_note">Add a note!</label>
-          <input
-            type="text"
-            name="name"
-            className="form-control"
-            placeholder="Note"
-            ref={note}
-          />
-          <button
-            type="submit"
-            onClick={(evt) => {
-              evt.preventDefault();
-              addToList();
-            }}
-            className="btn btn-primary"
-          >
-            Ate it!
-          </button>
-        </fieldset>
-      </form>
+      <div className="form">
+        <form className="hotDogs">
+          <fieldset>
+            <h3 className="hotDog_name_form"> Name: {hotDog.name}</h3>
+            <div className="hotDog_toppings"> Toppings: {hotDog.topping}</div>
+            <label className="hotDog_note" htmlFor="hotDog_note">
+              Add a note!
+            </label>
+            <input
+              type="text"
+              name="name"
+              className="form-control"
+              placeholder="Note"
+              ref={note}
+            />
+            <button
+              type="submit"
+              onClick={(evt) => {
+                evt.preventDefault();
+                addToList();
+              }}
+              className="btn btn-primary"
+            >
+              Ate it!
+            </button>
+          </fieldset>
+        </form>
+      </div>
     </>
   );
 };

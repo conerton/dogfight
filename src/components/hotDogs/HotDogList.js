@@ -18,6 +18,7 @@ export const HotDogList = () => {
   if (hotDogs.id === userHotDogs.hotDogId) {
     return (
       <div className="hotDogs">
+        <h2 className="hotDogTitle">HOT DOGS</h2>
         {hotDogs.map((hd) => (
           <HotDog key={hd.id} hotDog={hd} />
         ))}
