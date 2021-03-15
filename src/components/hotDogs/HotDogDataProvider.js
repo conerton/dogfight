@@ -6,7 +6,7 @@ export const HotDogProvider = (props) => {
   const [hotDogs, setHotDogs] = useState([]);
 
   const getHotDogs = () => {
-    return fetch("http://localhost:8088/hotDogs")
+    return fetch("http://localhost:8000/hotdogs")
       .then((res) => res.json())
       .then(setHotDogs);
   };

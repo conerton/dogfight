@@ -11,7 +11,7 @@ export const Dogfight = () => (
     <Route
       render={() => {
         // The user id is saved under the key dogfight_user_id in local Storage. Change below if needed!
-        if (localStorage.getItem("dogfight_user_id")) {
+        if (localStorage.getItem("app_user")) {
           return (
             <>
               <Route render={(props) => <NavBar {...props} />} />

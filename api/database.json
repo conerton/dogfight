@@ -41,6 +41,27 @@
       "firstName": "Frank",
       "lastName": "Furter",
       "id": 6
+    },
+    {
+      "email": "hotdog@hotdog.com",
+      "password": "hotdog",
+      "firstName": "Shawn",
+      "lastName": "Conerton",
+      "id": 7
+    },
+    {
+      "email": "j@j.com",
+      "password": "hotdog",
+      "firstName": "James",
+      "lastName": "Jameson",
+      "id": 8
+    },
+    {
+      "email": "s@s.com",
+      "password": "hotdog",
+      "firstName": "S",
+      "lastName": "S",
+      "id": 9
     }
   ],
   "hotDogs": [

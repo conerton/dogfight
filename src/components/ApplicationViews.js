@@ -18,7 +18,7 @@ export const ApplicationViews = (props) => {
           <HotDogProvider>
             <Route
               exact
-              path="/"
+              path="/hot_dogs"
               render={(props) => (
                 <>
                   <HotDogList />

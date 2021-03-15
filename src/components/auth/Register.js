@@ -1,58 +1,46 @@
 import React, { useRef } from "react";
+import { Link, useHistory } from "react-router-dom";
 import "./Login.css";
-
-export const Register = (props) => {
-  const firstName = useRef();
-  const lastName = useRef();
+export const Register = () => {
+  // const firstName = useRef();
+  // const lastName = useRef();
   const email = useRef();
   const password = useRef();
   const verifyPassword = useRef();
   const passwordDialog = useRef();
-  const conflictDialog = useRef();
-
-  const existingUserCheck = () => {
-    // If your json-server URL is different, please change it below!
-    return fetch(`http://localhost:8088/users?email=${email.current.value}`)
-      .then((_) => _.json())
-      .then((user) => !!user.length);
-  };
-
+  const history = useHistory();
   const handleRegister = (e) => {
     e.preventDefault();
-
+    console.log("Clicked");
+    // let createdOn = ""
+    // createdOn = new Date()
+    // console.log(createdOn)
     if (password.current.value === verifyPassword.current.value) {
-      existingUserCheck().then((userExists) => {
-        if (!userExists) {
-          // If your json-server URL is different, please change it below!
-          fetch("http://localhost:8088/users", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              email: email.current.value,
-              password: password.current.value,
-              firstName: firstName.current.value,
-              lastName: lastName.current.value,
-            }),
-          })
-            .then((_) => _.json())
-            .then((createdUser) => {
-              if (createdUser.hasOwnProperty("id")) {
-                // The user id is saved under the key dogfight_user_id in local Storage. Change below if needed!
-                localStorage.setItem("dogfight_user_id", createdUser.id);
-                props.history.push("/");
-              }
-            });
-        } else {
-          conflictDialog.current.showModal();
-        }
-      });
+      const newUser = {
+        username: email.current.value,
+        email: email.current.value,
+        password: password.current.value,
+      };
+      return fetch("http://127.0.0.1:8000/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(newUser),
+      })
+        .then((res) => res.json())
+        .then((res) => {
+          console.log(res);
+          if ("token" in res) {
+            localStorage.setItem("app_user", res.token);
+            history.push("/");
+          }
+        });
     } else {
       passwordDialog.current.showModal();
     }
   };
-
   return (
     <main style={{ textAlign: "center" }}>
       <dialog className="dialog dialog--password" ref={passwordDialog}>
@@ -64,44 +52,8 @@ export const Register = (props) => {
           Close
         </button>
       </dialog>
-
-      <dialog className="dialog dialog--password" ref={conflictDialog}>
-        <div>Account with that email address already exists</div>
-        <button
-          className="button--close"
-          onClick={(e) => conflictDialog.current.close()}
-        >
-          Close
-        </button>
-      </dialog>
-
       <form className="form--login" onSubmit={handleRegister}>
-        <h1 className="h3 mb-3 font-weight-normal">
-          Please Register for Application Name
-        </h1>
-        <fieldset>
-          <label htmlFor="firstName"> First Name </label>
-          <input
-            ref={firstName}
-            type="text"
-            name="firstName"
-            className="form-control"
-            placeholder="First name"
-            required
-            autoFocus
-          />
-        </fieldset>
-        <fieldset>
-          <label htmlFor="lastName"> Last Name </label>
-          <input
-            ref={lastName}
-            type="text"
-            name="lastName"
-            className="form-control"
-            placeholder="Last name"
-            required
-          />
-        </fieldset>
+        <h1 className="h3 mb-3 font-weight-normal">Register an account</h1>
         <fieldset>
           <label htmlFor="inputEmail"> Email address </label>
           <input
@@ -135,10 +87,19 @@ export const Register = (props) => {
             required
           />
         </fieldset>
-        <fieldset>
-          <button type="submit"> Sign in </button>
+        <fieldset
+          style={{
+            textAlign: "center",
+          }}
+        >
+          <button className="btn btn-1 btn-sep icon-send" type="submit">
+            Register
+          </button>
         </fieldset>
       </form>
+      <section className="link--register">
+        Already registered? <Link to="/login">Login</Link>
+      </section>
     </main>
   );
 };
