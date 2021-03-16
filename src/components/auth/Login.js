@@ -13,6 +13,7 @@ export const Login = () => {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
+        Authorization: `Token ${localStorage.getItem("token")}`,
       },
       body: JSON.stringify({
         username: email.current.value,
@@ -25,7 +26,7 @@ export const Login = () => {
         if ("valid" in res && res.valid) {
           localStorage.setItem("app_user", res.token);
           console.log(res);
-          history.push("/hot_dogs");
+          history.push("/");
         } else {
           invalidDialog.current.showModal();
         }
