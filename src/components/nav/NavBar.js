@@ -4,7 +4,7 @@ import "./NavBar.css";
 import logo from "../img/CorisLogo.png";
 
 const clearLocalStorage = () => {
-  localStorage.removeItem("dogfight_user_id");
+  localStorage.removeItem("app_user");
 };
 
 export const NavBar = (props) => {

@@ -41,6 +41,27 @@
       "firstName": "Frank",
       "lastName": "Furter",
       "id": 6
+    },
+    {
+      "email": "hotdog@hotdog.com",
+      "password": "hotdog",
+      "firstName": "Shawn",
+      "lastName": "Conerton",
+      "id": 7
+    },
+    {
+      "email": "j@j.com",
+      "password": "hotdog",
+      "firstName": "James",
+      "lastName": "Jameson",
+      "id": 8
+    },
+    {
+      "email": "s@s.com",
+      "password": "hotdog",
+      "firstName": "S",
+      "lastName": "S",
+      "id": 9
     }
   ],
   "hotDogs": [
@@ -1625,6 +1646,14 @@
       "timeStamp": 1609790546060,
       "favHotDog": false,
       "id": 175
+    },
+    {
+      "hotDogId": 1,
+      "userId": 6,
+      "hotDogNote": "hotdog",
+      "timeStamp": 1610306792456,
+      "favHotDog": false,
+      "id": 176
     }
   ],
   "wallOfWeiners": []
