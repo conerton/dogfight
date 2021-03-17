@@ -40,8 +40,8 @@ export const HotDogProvider = (props) => {
     });
   };
 
-  const addHotDog = (note, userId, hotDogId, dateCompleted, isFavorite) => {
-    return fetch(`http://localhost:8088/userHotDogs`, {
+  const addHotDog = (note, hotDogId, dateCompleted, isFavorite, isApproved) => {
+    return fetch(`http://localhost:8000/user_hot_dogs`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -50,16 +50,16 @@ export const HotDogProvider = (props) => {
       },
       body: JSON.stringify(
         note,
-        parseInt(userId),
         parseInt(hotDogId),
         dateCompleted,
-        isFavorite
+        isFavorite,
+        isApproved
       ),
     }).then(getHotDogs);
   };
 
   const getUserHotDogs = () => {
-    return fetch("http://localhost:8088/user_hot_dogs", {
+    return fetch("http://localhost:8000/user_hot_dogs", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

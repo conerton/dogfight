@@ -6,7 +6,7 @@ export const HotDogForm = (props) => {
   const { getHotDogById, addHotDog } = useContext(HotDogContext);
   const [hotDog, setHotDog] = useState({});
 
-  const note = useRef(null);
+  const hotDogNote = useRef(null);
 
   useEffect(() => {
     getHotDogById(props.match.params.hotDogId).then((parsedHotDog) =>
@@ -17,21 +17,23 @@ export const HotDogForm = (props) => {
   //add the notes to the json
   const addToList = () => {
     const hotDogId = parseInt(props.match.params.hotDogId);
-    const userId = parseInt(localStorage.getItem("dogfight_user_id"));
-    const hotDogNote = note.current.value;
-    const timeStamp = Date.now();
-    const favHotDog = false;
+    // const userId = parseInt(localStorage.getItem("app_user"));
+    const note = hotDogNote.current.value;
+    const dateCompleted = Date.now();
+    const isFavorite = false;
+    const isApproved = true;
     console.log("note", hotDogNote);
 
-    if (hotDogNote === "") {
+    if (note === "") {
       window.alert("Please add a note!");
     } else {
       addHotDog({
         hotDogId,
-        userId,
-        hotDogNote,
-        timeStamp,
-        favHotDog,
+        // userId,
+        note,
+        dateCompleted,
+        isFavorite,
+        isApproved,
       }).then(() => props.history.push("/"));
     }
   };
@@ -43,7 +45,7 @@ export const HotDogForm = (props) => {
         <form className="hotDogs">
           <fieldset>
             <h3 className="hotDog_name_form"> Name: {hotDog.name}</h3>
-            <div className="hotDog_toppings"> Toppings: {hotDog.topping}</div>
+            <div className="hotDog_toppings"> Toppings: {hotDog.toppings}</div>
             <label className="hotDog_note" htmlFor="hotDog_note">
               Add a note!
             </label>
@@ -52,7 +54,7 @@ export const HotDogForm = (props) => {
               name="name"
               className="form-control"
               placeholder="Note"
-              ref={note}
+              ref={hotDogNote}
             />
             <button
               type="submit"

@@ -11,7 +11,7 @@ export const UserHotDogProvider = (props) => {
   const user = localStorage.getItem("app_user");
   const getUserHotDogs = () => {
     return fetch(
-      `http://localhost:8088/userHotDogs/?userId=${user}&_expand=hotDog`,
+      `http://localhost:8000/user_hot_dogs/?userId=${user}&_expand=hotDog`,
       {
         method: "GET",
         headers: {
@@ -26,7 +26,7 @@ export const UserHotDogProvider = (props) => {
   };
 
   const getUserHotDogsById = (id) => {
-    return fetch(`http://localhost:8088/userHotDogs/${id}?_expand=hotDog`, {
+    return fetch(`http://localhost:8000/userHotDogs/${id}?_expand=hotDog`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -39,7 +39,7 @@ export const UserHotDogProvider = (props) => {
   };
 
   const deleteUserHotDog = (userHotDogId) => {
-    return fetch(`http://localhost:8088/userHotDogs/${userHotDogId}`, {
+    return fetch(`http://localhost:8000/userHotDogs/${userHotDogId}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -50,7 +50,7 @@ export const UserHotDogProvider = (props) => {
   };
 
   const editUserHotDog = (favHotDog) => {
-    return fetch(`http://localhost:8088/userHotDogs/${favHotDog.id}`, {
+    return fetch(`http://localhost:8000/userHotDogs/${favHotDog.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
