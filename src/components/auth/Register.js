@@ -2,8 +2,8 @@ import React, { useRef } from "react";
 import { Link, useHistory } from "react-router-dom";
 import "./Login.css";
 export const Register = () => {
-  // const firstName = useRef();
-  // const lastName = useRef();
+  const firstName = useRef();
+  const lastName = useRef();
   const email = useRef();
   const password = useRef();
   const verifyPassword = useRef();
@@ -20,6 +20,8 @@ export const Register = () => {
         username: email.current.value,
         email: email.current.value,
         password: password.current.value,
+        first_name: firstName.current.value,
+        last_name: lastName.current.value,
       };
       return fetch("http://127.0.0.1:8000/register", {
         method: "POST",
@@ -54,6 +56,28 @@ export const Register = () => {
       </dialog>
       <form className="form--login" onSubmit={handleRegister}>
         <h1 className="h3 mb-3 font-weight-normal">Register an account</h1>
+        <fieldset>
+          <label htmlFor="firstName"> First Name </label>
+          <input
+            ref={firstName}
+            type="text"
+            name="firstName"
+            className="form-control"
+            placeholder="First Name"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <label htmlFor="lastName"> Last Name </label>
+          <input
+            ref={lastName}
+            type="text"
+            name="lastName"
+            className="form-control"
+            placeholder="Last Name"
+            required
+          />
+        </fieldset>
         <fieldset>
           <label htmlFor="inputEmail"> Email address </label>
           <input
