@@ -6,11 +6,11 @@ import "./UserHotDog.css";
 
 export const UserHotDogList = (props) => {
   const { userHotDogs, getUserHotDogs } = useContext(UserHotDogContext);
-  const { hotDogs, getHotDogs } = useContext(HotDogContext);
+  const { hotDogs } = useContext(HotDogContext);
 
   //you need to get all hotdogs before you can get user hot dogs to find the name
   useEffect(() => {
-    getHotDogs().then(getUserHotDogs);
+    getUserHotDogs();
   }, []);
   console.log("HOTDOGS", hotDogs);
 
