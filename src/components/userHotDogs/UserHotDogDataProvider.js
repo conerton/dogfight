@@ -6,7 +6,7 @@ export const UserHotDogProvider = (props) => {
   //this is the set all hotDogs
   const [userHotDogs, setUserHotDogs] = useState([]);
   //defined state varible for single user hotdog with hotdog object from the expand query parameter from the user hotdog fetch
-  const [userHotDog, setUserHotDog] = useState({ hotDog: {} });
+  const [userHotDog, setUserHotDog] = useState({ hot_dog: {} });
 
   const user = localStorage.getItem("app_user");
   const getUserHotDogs = () => {
