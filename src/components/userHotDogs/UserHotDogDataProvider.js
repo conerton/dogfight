@@ -10,23 +10,20 @@ export const UserHotDogProvider = (props) => {
 
   const user = localStorage.getItem("app_user");
   const getUserHotDogs = () => {
-    return fetch(
-      `http://localhost:8000/user_hot_dogs/?userId=${user}&_expand=hotDog`,
-      {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-          Authorization: `Token ${localStorage.getItem("app_user")}`,
-        },
-      }
-    )
+    return fetch(`http://localhost:8000/user_hot_dogs`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        Authorization: `Token ${localStorage.getItem("app_user")}`,
+      },
+    })
       .then((res) => res.json())
       .then(setUserHotDogs);
   };
 
   const getUserHotDogsById = (id) => {
-    return fetch(`http://localhost:8000/userHotDogs/${id}?_expand=hotDog`, {
+    return fetch(`http://localhost:8000/user_hot_dogs/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -39,7 +36,7 @@ export const UserHotDogProvider = (props) => {
   };
 
   const deleteUserHotDog = (userHotDogId) => {
-    return fetch(`http://localhost:8000/userHotDogs/${userHotDogId}`, {
+    return fetch(`http://localhost:8000/user_hot_dogs/${userHotDogId}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

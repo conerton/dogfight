@@ -2,12 +2,20 @@ import React, { useContext, useEffect, useState, useRef } from "react";
 import "./UserHotDog.css";
 import { Link } from "react-router-dom";
 import { UserHotDogContext } from "./UserHotDogDataProvider";
+import { HotDogContext } from "../hotDogs/HotDogDataProvider";
 
-export const UserHotDog = ({ userHotDog, hotDog, props }) => {
+export const UserHotDog = ({ userHotDog, props }) => {
   const { deleteUserHotDog, editUserHotDog } = useContext(UserHotDogContext);
-
-  // console.log("HOTDOGS", hotDog);
+  const { getHotDogById } = useContext(HotDogContext);
+  const [hotDog, setHotDog] = useState({});
+  console.log("HOTDOGS", hotDog);
   // console.log("USER HD", userHotDogs);
+
+  useEffect(() => {
+    getHotDogById(props.match.params.hotDogId).then((parsedHotDog) =>
+      setHotDog(parsedHotDog)
+    );
+  }, []);
 
   // useEffect(() => {
   //   getUserHotDogById(+props.match.params.userHotDogId);
@@ -26,38 +34,45 @@ export const UserHotDog = ({ userHotDog, hotDog, props }) => {
       id: parseInt(userHotDog.id),
     }).then(() => props.history.push("/"));
   };
-  return (
-    <section className="userHotDog">
-      <div className="user_hotDog_name">
-        <style>
-          @import
-          url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
-        </style>
-        <Link to={`/userHotDogs/${userHotDog.id}`}>{hotDog.name}</Link>
-      </div>
-      <form>
-        <label className="favorite">
-          Favorite?:{" "}
-          <input
-            ref={fav}
-            type="radio"
-            value={userHotDog.userId}
-            name="favHotDog"
-            className="is_favorite"
-            onChange={favoriteChoosen}
-          />{" "}
-        </label>
-      </form>
-      <button
-        className="delete_button"
-        onClick={() => {
-          deleteUserHotDog(userHotDog.id).then(() => props.history.push("/"));
-        }}
-      >
-        Delete
-      </button>
-    </section>
-  );
+
+  if (hotDog.id === userHotDog.hotDogId) {
+    return (
+      <section className="userHotDog">
+        <div className="user_hotDog_name">
+          <style>
+            @import
+            url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+          </style>
+          <Link to={`/user_hot_dogs/${userHotDog.id}`}>
+            {userHotDog.hot_dog.name}
+          </Link>
+        </div>
+        <form>
+          <label className="favorite">
+            Favorite?:{" "}
+            <input
+              ref={fav}
+              type="radio"
+              value={userHotDog.userId}
+              name="favHotDog"
+              className="is_favorite"
+              onChange={favoriteChoosen}
+            />{" "}
+          </label>
+        </form>
+        <button
+          className="delete_button"
+          onClick={() => {
+            deleteUserHotDog(userHotDog.id).then(() => props.history.push("/"));
+          }}
+        >
+          Delete
+        </button>
+      </section>
+    );
+  } else {
+    return null;
+  }
 };
 
 // const [userHotDog, setUserHotDog] = useState({ hotdog: {} });
