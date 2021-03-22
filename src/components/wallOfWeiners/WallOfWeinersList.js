@@ -8,7 +8,7 @@ export const WallOfWeinersList = (props) => {
   const { users, getUsers, getUserHotDogs } = useContext(WallOfWeinersContext);
   // const { userHotDog, getUserHotDogById } = useContext(UserHotDogContext);
   useEffect(() => {
-    getUsers();
+    // getUsers();
     getUserHotDogs();
   }, []);
 

@@ -10,7 +10,7 @@ export const UserHotDogProvider = (props) => {
 
   const user = localStorage.getItem("app_user");
   const getUserHotDogs = () => {
-    return fetch(`http://localhost:8000/user_hot_dogs`, {
+    return fetch(`http://localhost:8000/user_hot_dogs?sortby=user`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
