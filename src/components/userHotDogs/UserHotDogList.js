@@ -29,7 +29,7 @@ export const UserHotDogList = (props) => {
       <h2 className="userHotDogTitle"> EATEN HOT DOGS</h2>
       {userHotDogs.map((uhd) => {
         const hotDogName = hotDogs.find((hd) => hd.id === uhd.hotDogId);
-        console.log("HOT DOG NAME", hotDogName);
+        // console.log("HOT DOG NAME", hotDogName);
         return (
           <UserHotDog
             key={uhd.id}
