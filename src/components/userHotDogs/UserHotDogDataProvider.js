@@ -47,7 +47,7 @@ export const UserHotDogProvider = (props) => {
   };
 
   const editUserHotDog = (favHotDog) => {
-    return fetch(`http://localhost:8000/userHotDogs/${favHotDog.id}`, {
+    return fetch(`http://localhost:8000/user_hot_dogs/${favHotDog.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

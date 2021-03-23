@@ -7,14 +7,15 @@ import { HotDogContext } from "../hotDogs/HotDogDataProvider";
 export const UserHotDog = ({ userHotDog, props }) => {
   const { deleteUserHotDog, editUserHotDog } = useContext(UserHotDogContext);
   const { getHotDogById } = useContext(HotDogContext);
-  const [hotDog, setHotDog] = useState({});
-  console.log("HOTDOGS", hotDog);
+  // const [hotDog, setHotDog] = useState({});
+  // console.log("HOTDOGS", hotDog);
   // console.log("USER HD", userHotDogs);
 
   // useEffect(() => {
   //   getUserHotDogById(+props.match.params.userHotDogId);
   // }, []);
-  // const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState(false);
+
   const fav = useRef(false);
 
   //this is implementing the radio button
@@ -22,12 +23,22 @@ export const UserHotDog = ({ userHotDog, props }) => {
     editUserHotDog({
       hotDogId: parseInt(userHotDog.hotDogId),
       userId: parseInt(userHotDog.userId),
-      hotDogNote: userHotDog.hotDogNote,
-      timeStamp: userHotDog.timeStamp,
-      favHotDog: fav.current.checked,
+      note: userHotDog.note,
+      dateCompleted: userHotDog.dateCompleted,
+      isFavorite: fav.current.checked,
       id: parseInt(userHotDog.id),
     }).then(() => props.history.push("/"));
   };
+  // const notFavoriteChoosen = () => {
+  //   editUserHotDog({
+  //     hotDogId: parseInt(userHotDog.hotDogId),
+  //     userId: parseInt(userHotDog.userId),
+  //     note: userHotDog.note,
+  //     dateCompleted: userHotDog.dateCompleted,
+  //     isFavorite: fav.current.checked,
+  //     id: parseInt(userHotDog.id),
+  //   }).then(() => props.history.push("/"));
+  // };
 
   return (
     <section className="userHotDog">
@@ -42,11 +53,11 @@ export const UserHotDog = ({ userHotDog, props }) => {
       </div>
       <form>
         <label className="favorite">
-          Favorite?:{" "}
+          Favorite!:{" "}
           <input
             ref={fav}
-            type="radio"
-            value={userHotDog.userId}
+            type="checkbox"
+            checked={userHotDog.is_favorite}
             name="favHotDog"
             className="is_favorite"
             onChange={favoriteChoosen}
